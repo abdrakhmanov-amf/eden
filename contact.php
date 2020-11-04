@@ -411,26 +411,7 @@
                 <a href=""><img src="https://preview.colorlib.com/theme/eden/img/instagram/1.jpg" alt="" data-pagespeed-url-hash="270620287"
                         onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
             </div>
-            <div class="col-2">
-                <a href=""><img src="https://preview.colorlib.com/theme/eden/img/instagram/2.jpg" alt="" data-pagespeed-url-hash="565120208"
-                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
-            </div>
-            <div class="col-2">
-                <a href=""><img src="https://preview.colorlib.com/theme/eden/img/instagram/3.jpg" alt="" data-pagespeed-url-hash="859620129"
-                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
-            </div>
-            <div class="col-2">
-                <a href=""><img src="https://preview.colorlib.com/theme/eden/img/instagram/4.jpg" alt="" data-pagespeed-url-hash="1154120050"
-                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
-            </div>
-            <div class="col-2">
-                <a href=""><img src="https://preview.colorlib.com/theme/eden/img/instagram/5.jpg" alt="" data-pagespeed-url-hash="1448619971"
-                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
-            </div>
-            <div class="col-2">
-                <a href=""><img src="https://preview.colorlib.com/theme/eden/img/instagram/6.jpg" alt="" data-pagespeed-url-hash="1743119892"
-                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
-            </div>
+
         </div>
     </section>
     <!-- ================ Instargram Area End ================= -->
