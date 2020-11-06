@@ -11,6 +11,7 @@ header('Content-Type: text/html; charset=utf-8'); // кодировка
         '/'=> 'eden_pages/index.php',
         '/login'=> 'eden_pages/signin.php',
         '/registration'=> 'eden_pages/signup.php',
+        '/blog'=>'eden_pages/blog.php',
 
     //user page 
 
