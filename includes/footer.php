@@ -16,7 +16,7 @@
                         <p>Адрес: Ваш адрес идет
                             вот ваш демонстрационный адрес.</p>
                         <span>Телефон: +8880 44338899</span>
-                        <span>Электроннпя почта: info@colorlib.com</span>
+                        <span>Электронное письмо: info@colorlib.com</span>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
@@ -58,8 +58,8 @@
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     Авторские права &copy;<script>
                         document.write(new Date().getFullYear());
-                    </script>Все права защищены | Этот шаблон сделан с<i class="fa fa-heart"
-                        aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">colorlib</a>
+                    </script> Все права защищены | Этот шаблон сделан с <i class="fa fa-heart"
+                        aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>
                 <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
