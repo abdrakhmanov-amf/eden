@@ -18,6 +18,8 @@ header('Content-Type: text/html; charset=utf-8'); // кодировка
 
     //query
         '/regis_to_new_user' =>'query/regis.php',
+        '/sign' =>'query/sign.php',
+        
 
         '/404' =>'error/404.html',
 
