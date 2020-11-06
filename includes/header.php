@@ -12,20 +12,20 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
-                            <li class="nav-item active"><a class="nav-link" href="index.php">Домашняя</a></li>
-                            <li class="nav-item"><a class="nav-link" href="categories.php">Категории</a></li>
-                            <li class="nav-item"><a class="nav-link" href="archive.php">Архив</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="/index.php">Домашняя</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/categories.php">Категории</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/archive.php">Архив</a></li>
                             <li class="nav-item submenu dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
                                     aria-haspopup="true" aria-expanded="false">Блог</a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="blog.php">Блог</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">Подробности блога</a>
+                                    <li class="nav-item"><a class="nav-link" href="/blog.php">Блог</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/single-blog.html">Подробности блога</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="latest-news.php">Последние новости</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.php">Свяжитесь с нами</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/latest-news.php">Последние новости</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/contact.php">Свяжитесь с нами</a></li>
                         </ul>
                     </div>
                 </div>
