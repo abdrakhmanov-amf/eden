@@ -12,7 +12,7 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
-                            <li class="nav-item active"><a class="nav-link" href="/index.php">Домашняя</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="/">Домашняя</a></li>
                             <li class="nav-item"><a class="nav-link" href="/categories.php">Категории</a></li>
                             <li class="nav-item"><a class="nav-link" href="/archive.php">Архив</a></li>
                             <li class="nav-item submenu dropdown">
