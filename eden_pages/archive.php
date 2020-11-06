@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
 
-<?php include "includes/head.php";  ?>
+<?php include "../includes/head.php";  ?>
 
 <body>
     <!--================ Start header Top Area =================-->
-    <?php include "includes/header-top.php"; ?>
+    <?php include "../includes/header-top.php"; ?>
     <!--================ End header top Area =================-->
     <!-- Start header Menu Area -->
-       <?php include "includes/header.php"; ?>
+       <?php include "../includes/header.php"; ?>
     <!-- End header MEnu Area -->
     <!--================Fullwidth block Area =================-->
     <!--================Home Banner Area =================-->
@@ -298,12 +298,12 @@
     </section>
     <!-- ================ Instargram Area End ================= -->
     <!-- ================ start footer Area ================= -->
-        <?php include "includes/footer.php"; ?>
+        <?php include "../includes/footer.php"; ?>
   <!-- ================ End footer Area ================= -->
 <!-- ================ End footer Area ================= -->
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<?php include "includes/js.php"; ?>
+<?php include "../includes/js.php"; ?>
 
     
 </body>
