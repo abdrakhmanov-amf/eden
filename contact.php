@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="https://preview.colorlib.com/theme/eden/img/xfavicon.png.pagespeed.ic.66Q9flSNoC.webp"
         type="image/png">
-    <title>Eden Megazine</title>
+    <title>Eden News</title>
     <!-- <base href="https://preview.colorlib.com/theme/eden/"> -->
     <!-- Bootstrap CSS -->
     <!-- main css -->
@@ -229,8 +229,8 @@
                     <div class="right-button">
                         <ul>
                             <li><a id="search" href="javascript:void(0)"><i class="fas fa-search"></i></a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Subscribe</a></li>
+                            <li><a href="">Главная</a></li>
+                            <li><a href="">Подписаться</a></li>
                         </ul>
                     </div>
                 </div>
@@ -262,20 +262,20 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
-                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="category.html">Categories</a></li>
-                            <li class="nav-item"><a class="nav-link" href="archive.html">Archive</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="index.html">Домашняя</a></li>
+                            <li class="nav-item"><a class="nav-link" href="category.html">Категории</a></li>
+                            <li class="nav-item"><a class="nav-link" href="archive.html">Архив</a></li>
                             <li class="nav-item submenu dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Blog</a>
+                                    aria-haspopup="true" aria-expanded="false">Блог</a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a>
+                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">Подробности блога</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link" href="blog.html">Latest news</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Свяжитесь с нами</a></li>
                         </ul>
                     </div>
                 </div>
@@ -289,11 +289,11 @@
             <div class="container">
                 <div class="banner_content d-md-flex justify-content-between align-items-center">
                     <div class="mb-3 mb-md-0">
-                        <h2>Contact</h2>
+                        <h2>Контакты</h2>
                     </div>
                     <div class="page_link">
-                        <a href="index.html">Home</a>
-                        <a href="contact.html">Contact</a>
+                        <a href="index.html">Домашняя</a>
+                        <a href="contact.html">Контакты</a>
                     </div>
                 </div>
             </div>
@@ -341,7 +341,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h2 class="contact-title">Get in Touch</h2>
+                    <h2 class="contact-title">Связаться</h2>
                 </div>
                 <div class="col-lg-8">
                     <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm"
@@ -350,30 +350,30 @@
                             <div class="col-12">
                                 <div class="form-group">
                                     <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9"
-                                        placeholder="Enter Message"></textarea>
+                                        placeholder="Введите сообщение"></textarea>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <input class="form-control" name="name" id="name" type="text"
-                                        placeholder="Enter your name">
+                                        placeholder="Введите ваше имя">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <input class="form-control" name="email" id="email" type="email"
-                                        placeholder="Enter email address">
+                                        placeholder="Введите адрес электронной почты">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
                                     <input class="form-control" name="subject" id="subject" type="text"
-                                        placeholder="Enter Subject">
+                                        placeholder="Введите тему">
                                 </div>
                             </div>
                         </div>
                         <div class="form-group mt-3">
-                            <button type="submit" class="button button-contactForm">Send Message</button>
+                            <button type="submit" class="button button-contactForm">Отправить сообщение</button>
                         </div>
                     </form>
                 </div>
@@ -381,7 +381,7 @@
                     <div class="media contact-info">
                         <span class="contact-info__icon"><i class="ti-home"></i></span>
                         <div class="media-body">
-                            <h3>Buttonwood, California.</h3>
+                            <h3>Баттонвуд, Калифорния.</h3>
                             <p>Rosemead, CA 91770</p>
                         </div>
                     </div>
@@ -389,14 +389,14 @@
                         <span class="contact-info__icon"><i class="ti-tablet"></i></span>
                         <div class="media-body">
                             <h3><a href="tel:454545654">00 (440) 9865 562</a></h3>
-                            <p>Mon to Fri 9am to 6pm</p>
+                            <p>С пн по пт с 9:00 до 18:00</p>
                         </div>
                     </div>
                     <div class="media contact-info">
                         <span class="contact-info__icon"><i class="ti-email"></i></span>
                         <div class="media-body">
-                            <h3><a href="mailto:support@colorlib.com">support@colorlib.com</a></h3>
-                            <p>Send us your query anytime!</p>
+                            <h3><a href="mailto:misha2005a@icloud.com">abdrakhmanov-amf-co@icloud.com</a></h3>
+                            <p>Отправьте нам свой запрос в любое время!</p>
                         </div>
                     </div>
                 </div>
@@ -420,42 +420,42 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
-                    <h4>About Us</h4>
-                    <p>Heaven fruitful doesn't over lesser days appear creeping seasons so behold bearing days open</p>
+                    <h4>ПРо нас</h4>
+                    <p>Небеса плодородны, но в меньшие дни не появляются ползучие сезоны, так что вот дни плодородия открыты</p>
                     <div class="footer-logo">
                         <img src="https://preview.colorlib.com/theme/eden/img/logo.png" alt="" data-pagespeed-url-hash="2634304158"
                             onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
-                    <h4>Contact Info</h4>
+                    <h4>Контактная информация</h4>
                     <div class="footer-address">
-                        <p>Address :Your address goes
-                            here, your demo address.</p>
-                        <span>Phone : +8880 44338899</span>
-                        <span>Email : info@colorlib.com</span>
+                        <p>Адрес: Ваш адрес идет
+                            вот ваш демонстрационный адрес.</p>
+                        <span>Телефон: +8880 44338899</span>
+                        <span>Электронное письмо: info@colorlib.com</span>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
-                    <h4>Important Link</h4>
+                    <h4>Важная ссылка</h4>
                     <ul>
-                        <li><a href="#">WHMCS-bridge</a></li>
-                        <li><a href="#">Search Domain</a></li>
-                        <li><a href="#">My Account</a></li>
-                        <li><a href="#">Shopping Cart</a></li>
-                        <li><a href="#">Our Shop</a></li>
+                        <li><a href="#">WHMCS-мост</a></li>
+                        <li><a href="#">Поиск домена</a></li>
+                        <li><a href="#">Мой аккаунт</a></li>
+                        <li><a href="#">Корзина покупателя</a></li>
+                        <li><a href="#">Наш магазин</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-md-6 mb-4 mb-xl-0 single-footer-widget">
-                    <h4>Newsletter</h4>
-                    <p>Heaven fruitful doesn't over lesser in days. Appear creeping seasons deve behold bearing days
-                        open</p>
+                    <h4>Новостная рассылка</h4>
+                    <p>Небеса плодоносят не меньше дней. Появляются ползучие сезоны, вот дни рождения
+                        открытым</p>
                     <div class="form-wrap" id="mc_embed_signup">
                         <form target="_blank"
                             action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01">
                             <div class="input-group">
-                                <input type="email" class="form-control" name="EMAIL" placeholder="Your Email Address"
-                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '">
+                                <input type="email" class="form-control" name="EMAIL" placeholder="Ваш адрес электронной почты"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ваш адрес электронной почты'">
                                 <div class="input-group-append">
                                     <button class="btn click-btn" type="submit">
                                         <i class="fab fa-telegram-plane"></i>
@@ -473,9 +473,9 @@
             <div class="footer-bottom row align-items-center text-center text-lg-left no-gutters">
                 <p class="footer-text m-0 col-lg-8 col-md-12">
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright &copy;<script>
+                    Авторские права&copy;<script>
                         document.write(new Date().getFullYear());
-                    </script> All rights reserved | This template is made with <i class="fa fa-heart"
+                    </script>Все права защищены | Этот шаблон сделан с<i class="fa fa-heart"
                         aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>
@@ -497,8 +497,8 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <i class="fas fa-times"></i>
                     </button>
-                    <h2>Thank you</h2>
-                    <p>Your message is successfully sent...</p>
+                    <h2>Спасибо!</h2>
+                    <p>Ваше сообщение успешно отправлено ...</p>
                 </div>
             </div>
         </div>
@@ -511,8 +511,8 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <i class="fas fa-times"></i>
                     </button>
-                    <h2>Sorry !</h2>
-                    <p> Something went wrong </p>
+                    <h2>К сожалению!</h2>
+                    <p>Что-то пошло не так</p>
                 </div>
             </div>
         </div>
