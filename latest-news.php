@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="https://preview.colorlib.com/theme/eden/https://preview.colorlib.com/theme/eden/img/xfavicon.png.pagespeed.ic.66Q9flSNoC.webp"
         type="image/png">
-    <title>Eden Megazine</title>
+    <title>Eden News</title>
     <!-- <base href="https://preview.colorlib.com/theme/eden/"> -->
     <!-- Bootstrap CSS -->
     <!-- main css -->
@@ -45,8 +45,8 @@
                     <div class="right-button">
                         <ul>
                             <li><a id="search" href="javascript:void(0)"><i class="fas fa-search"></i></a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Subscribe</a></li>
+                            <li><a href="">Главная</a></li>
+                            <li><a href="">Подписаться</a></li>
                         </ul>
                     </div>
                 </div>
@@ -55,9 +55,9 @@
         <div class="search_input" id="search_input_box">
             <div class="container ">
                 <form class="d-flex justify-content-between search-inner">
-                    <input type="text" class="form-control" id="search_input" placeholder="Search Here">
+                    <input type="text" class="form-control" id="search_input" placeholder="Поиск">
                     <button type="submit" class="btn"></button>
-                    <span class="ti-close" id="close_search" title="Close Search"></span>
+                    <span class="ti-close" id="close_search" title="Закрыть поиск"></span>
                 </form>
             </div>
         </div>
@@ -78,20 +78,20 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
-                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="category.html">Categories</a></li>
-                            <li class="nav-item"><a class="nav-link" href="archive.html">Archive</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="index.html">Домашняя</a></li>
+                            <li class="nav-item"><a class="nav-link" href="category.html">Категории</a></li>
+                            <li class="nav-item"><a class="nav-link" href="archive.html">Архив</a></li>
                             <li class="nav-item submenu dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Blog</a>
+                                    aria-haspopup="true" aria-expanded="false">Блог</a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a>
+                                    <li class="nav-item"><a class="nav-link" href="blog.html">Блог</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">Подробности блога</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="blog.html">Latest news</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">Последние новости</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Свяжитесь с нами</a></li>
                         </ul>
                     </div>
                 </div>
@@ -105,11 +105,11 @@
             <div class="container">
                 <div class="banner_content d-md-flex justify-content-between align-items-center">
                     <div class="mb-3 mb-md-0">
-                        <h2>Blog</h2>
+                        <h2>Блог</h2>
                     </div>
                     <div class="page_link">
-                        <a href="index.html">Home</a>
-                        <a href="contact.html">Blog</a>
+                        <a href="index.html">Домашняя</a>
+                        <a href="contact.html">Блог</a>
                     </div>
                 </div>
             </div>
@@ -130,18 +130,18 @@
                                     onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                                 <a href="#" class="blog_item_date">
                                     <h3>15</h3>
-                                    <p>Jan</p>
+                                    <p>Янв</p>
                                 </a>
                             </div>
                             <div class="blog_details">
                                 <a class="d-inline-block" href="single-blog.html">
-                                    <h2>Google inks pact for new 35-storey office</h2>
+                                    <h2>Google подписал договор о новом 35-этажном офисе</h2>
                                 </a>
-                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                    he earth it first without heaven in place seed it second morning saying.</p>
+                                <p>То, что звезды доминиона освещают доминион, разделяют годы на четвертое, не имеют звезд, это то, что
+                                    он сначала земля его без неба вместо семян это второе утро говоря.</p>
                                 <ul class="blog-info-link">
-                                    <li><a href="#"><i class="far fa-user"></i> Travel, Lifestyle</a></li>
-                                    <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
+                                    <li><a href="#"><i class="far fa-user"></i>Путешествия, Образ жизни</a></li>
+                                    <li><a href="#"><i class="far fa-comments"></i>03 Комментарии</a></li>
                                 </ul>
                             </div>
                         </article>
@@ -174,22 +174,22 @@
                             <form action="#">
                                 <div class="form-group">
                                     <div class="input-group mb-3">
-                                        <input type="text" class="form-control" placeholder="Search Keyword">
+                                        <input type="text" class="form-control" placeholder="Поиск по ключевому слову">
                                         <div class="input-group-append">
                                             <button class="btn" type="button"><i class="ti-search"></i></button>
                                         </div>
                                     </div>
                                 </div>
                                 <button class="button rounded-0 primary-bg text-white w-100"
-                                    type="submit">Search</button>
+                                    type="submit">Поиск</button>
                             </form>
                         </aside>
                         <aside class="single_sidebar_widget post_category_widget">
-                            <h4 class="widget_title">Category</h4>
+                            <h4 class="widget_title">Категория</h4>
                             <ul class="list cat-list">
                                 <li>
                                     <a href="#" class="d-flex">
-                                        <p>Resaurant food</p>
+                                        <p>Ресторанная еда</p>
                                         <p>(37)</p>
                                     </a>
                                 </li>
@@ -197,31 +197,31 @@
                             </ul>
                         </aside>
                         <aside class="single_sidebar_widget popular_post_widget">
-                            <h3 class="widget_title">Recent Post</h3>
+                            <h3 class="widget_title">Недавний пост</h3>
                             <div class="media post_item">
                                 <img src="https://preview.colorlib.com/theme/eden/img/blog/popular-post/post1.jpg" alt="post"
                                     data-pagespeed-url-hash="984224458"
                                     onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                                 <div class="media-body">
                                     <a href="single-blog.html">
-                                        <h3>From life was you fish...</h3>
+                                        <h3>С жизни был ты рыбой ...</h3>
                                     </a>
-                                    <p>January 12, 2019</p>
+                                    <p>12 января 2019 г.,</p>
                                 </div>
                             </div>
 
                         </aside>
                         <aside class="single_sidebar_widget tag_cloud_widget">
-                            <h4 class="widget_title">Tag Clouds</h4>
+                            <h4 class="widget_title">Облака тегов</h4>
                             <ul class="list">
                                 <li>
-                                    <a href="#">project</a>
+                                    <a href="#">проект</a>
                                 </li>
                                 
                             </ul>
                         </aside>
                         <aside class="single_sidebar_widget instagram_feeds">
-                            <h4 class="widget_title">Instagram Feeds</h4>
+                            <h4 class="widget_title">Ленты Instagram</h4>
                             <ul class="instagram_row flex-wrap">
                                 <li>
                                     <a href="#">
@@ -234,13 +234,13 @@
                             </ul>
                         </aside>
                         <aside class="single_sidebar_widget newsletter_widget">
-                            <h4 class="widget_title">Newsletter</h4>
+                            <h4 class="widget_title">Новостная рассылка</h4>
                             <form action="#">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Enter email" required>
+                                    <input type="email" class="form-control" placeholder="Введите адрес электронной почты" required>
                                 </div>
                                 <button class="button rounded-0 primary-bg text-white w-100"
-                                    type="submit">Subscribe</button>
+                                    type="submit">Подписывайся</button>
                             </form>
                         </aside>
                     </div>
@@ -266,8 +266,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
-                    <h4>About Us</h4>
-                    <p>Heaven fruitful doesn't over lesser days appear creeping seasons so behold bearing days open</p>
+                    <h4>Про нас</h4>
+                    <p>Небеса плодородны, но в меньшие дни не появляются ползучие сезоны, так что вот дни плодородия открыты</p>
                     <div class="footer-logo">
                         <img src="data:image/webp;base64,UklGRsQBAABXRUJQVlA4TLcBAAAvcEAJEPdAkG1TntPcX2gKAoEknv1V9hEIpDiefRYIEBb8R0qQYDWKPzAgS7KttoEuwZKtBIpOiP3vU+89wuT5iuj/BKByT+IX+o6k/91q7C2v+3k5lft/pXFKxc/Pocp/On5eltlnc9M0uWzTNLl8XS93En+ESIYDr7TOKtJ0AjdeHTBYddVdrtROcETpGVLuSjxQTpE9rOKNq6Hn3jErY1TiXXY3SmpqOmIJo5I7UWpfzxxLNCqjy9fU8+G+27p/EwbFPsbOMLcUbTlTQUf4yO64LjJDWVxbSjlZBzhL6Sxt4kiszA56lUyKBjkwnagHgKGEQ86dCuBPQU89AEytVmwjsbi62t7UK0tL9VOrlVRL+h9qy9JQibfeSdwP9a6jGUAyGj/GQYUsD5luR/A/2EbFJ7NGQS/Q7QhxGe9FOtkA8Ew8iDVKHNcDgGuHGpYzxuAF6RoAAhPPYztCFMEy6tZ1N6VUBT5ez1Irl3oZObYt9yLiVgjfAmhT1FTsXYkvAZtiir2otRT8KQoJaBK0K+WJE8WAgwsbQgKmRmAH0AUwhxg/HlUux+v13GbkHbt7e38MDhUDAA=="
                             alt="" data-pagespeed-url-hash="2634304158"
@@ -275,34 +275,34 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
-                    <h4>Contact Info</h4>
+                    <h4>Контактная информация</h4>
                     <div class="footer-address">
-                        <p>Address :Your address goes
-                            here, your demo address.</p>
-                        <span>Phone : +8880 44338899</span>
-                        <span>Email : info@colorlib.com</span>
+                        <p>Адрес: Ваш адрес идет
+                            вот ваш демонстрационный адрес.</p>
+                        <span>Телефон: +8880 44338899</span>
+                        <span>Электронное письмо: info@colorlib.com</span>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
                     <h4>Important Link</h4>
                     <ul>
-                        <li><a href="#">WHMCS-bridge</a></li>
-                        <li><a href="#">Search Domain</a></li>
-                        <li><a href="#">My Account</a></li>
-                        <li><a href="#">Shopping Cart</a></li>
-                        <li><a href="#">Our Shop</a></li>
+                        <li><a href="#">WHMCS-мост</a></li>
+                        <li><a href="#">Поиск домена</a></li>
+                        <li><a href="#">Мой аккаунт</a></li>
+                        <li><a href="#">Корзина покупателя</a></li>
+                        <li><a href="#">Наш магазин</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-md-6 mb-4 mb-xl-0 single-footer-widget">
-                    <h4>Newsletter</h4>
-                    <p>Heaven fruitful doesn't over lesser in days. Appear creeping seasons deve behold bearing days
-                        open</p>
+                    <h4>Новостная рассылка</h4>
+                    <p>Небеса плодоносят не меньше дней. Появляются ползучие сезоны, вот дни рождения
+                        открытым</p>
                     <div class="form-wrap" id="mc_embed_signup">
                         <form target="_blank"
                             action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01">
                             <div class="input-group">
-                                <input type="email" class="form-control" name="EMAIL" placeholder="Your Email Address"
-                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '">
+                                <input type="email" class="form-control" name="EMAIL" placeholder="Ваш адрес электронной почты"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ваш адрес электронной почты '">
                                 <div class="input-group-append">
                                     <button class="btn click-btn" type="submit">
                                         <i class="fab fa-telegram-plane"></i>
@@ -320,9 +320,9 @@
             <div class="footer-bottom row align-items-center text-center text-lg-left no-gutters">
                 <p class="footer-text m-0 col-lg-8 col-md-12">
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright &copy;<script>
+                    Авторские права &copy;<script>
                         document.write(new Date().getFullYear());
-                    </script> All rights reserved | This template is made with <i class="fa fa-heart"
+                    </script> Все права защищены | Этот шаблон сделан с <i class="fa fa-heart"
                         aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>
