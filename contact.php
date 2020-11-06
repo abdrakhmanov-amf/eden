@@ -420,7 +420,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
-                    <h4>ПРо нас</h4>
+                    <h4>Про нас</h4>
                     <p>Небеса плодородны, но в меньшие дни не появляются ползучие сезоны, так что вот дни плодородия открыты</p>
                     <div class="footer-logo">
                         <img src="https://preview.colorlib.com/theme/eden/img/logo.png" alt="" data-pagespeed-url-hash="2634304158"
@@ -433,7 +433,7 @@
                         <p>Адрес: Ваш адрес идет
                             вот ваш демонстрационный адрес.</p>
                         <span>Телефон: +8880 44338899</span>
-                        <span>Электронное письмо: info@colorlib.com</span>
+                        <span>Электронная почта: info@colorlib.com</span>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
