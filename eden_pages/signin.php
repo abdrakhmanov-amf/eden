@@ -21,7 +21,7 @@
       <input type="text" placeholder="username"/>
       <input type="password" placeholder="password"/>
       <button>авторизоваться</button>
-      <p class="message">Не зарегистрирован?<a href="#">Создать аккаунт</a></p>
+      <p class="message">Не зарегистрирован?<a href="/registration">Создать аккаунт</a></p>
     </form>
   </div>
 </div>
