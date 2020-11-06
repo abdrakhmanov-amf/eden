@@ -2,7 +2,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
-                    <h4>Насчет нас</h4>
+                    <h4>Про нас</h4>
                     <p>Небеса плодородны, но в меньшие дни не появляются ползучие сезоны, так что вот дни плодородия открыты</p>
                     <div class="footer-logo">
                         <img src="data:image/webp;base64,UklGRsQBAABXRUJQVlA4TLcBAAAvcEAJEPdAkG1TntPcX2gKAoEknv1V9hEIpDiefRYIEBb8R0qQYDWKPzAgS7KttoEuwZKtBIpOiP3vU+89wuT5iuj/BKByT+IX+o6k/91q7C2v+3k5lft/pXFKxc/Pocp/On5eltlnc9M0uWzTNLl8XS93En+ESIYDr7TOKtJ0AjdeHTBYddVdrtROcETpGVLuSjxQTpE9rOKNq6Hn3jErY1TiXXY3SmpqOmIJo5I7UWpfzxxLNCqjy9fU8+G+27p/EwbFPsbOMLcUbTlTQUf4yO64LjJDWVxbSjlZBzhL6Sxt4kiszA56lUyKBjkwnagHgKGEQ86dCuBPQU89AEytVmwjsbi62t7UK0tL9VOrlVRL+h9qy9JQibfeSdwP9a6jGUAyGj/GQYUsD5luR/A/2EbFJ7NGQS/Q7QhxGe9FOtkA8Ew8iDVKHNcDgGuHGpYzxuAF6RoAAhPPYztCFMEy6tZ1N6VUBT5ez1Irl3oZObYt9yLiVgjfAmhT1FTsXYkvAZtiir2otRT8KQoJaBK0K+WJE8WAgwsbQgKmRmAH0AUwhxg/HlUux+v13GbkHbt7e38MDhUDAA=="

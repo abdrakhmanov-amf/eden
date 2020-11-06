@@ -16,7 +16,7 @@
             <div class="container">
                 <div class="banner_content d-md-flex justify-content-between align-items-center">
                     <div class="mb-3 mb-md-0">
-                        <h2>Блог</h2>
+                        <h2>Blog</h2>
                     </div>
                     <div class="page_link">
                         <a href="index.html">Домашняя</a>
@@ -33,11 +33,12 @@
             <div class="row">
                 <div class="col-lg-8 mb-5 mb-lg-0">
                     <div class="blog_left_sidebar">
+
                         <article class="blog_item">
                             <div class="blog_item_img">
                                 <img class="card-img rounded-0"
-                                    src="https://preview.colorlib.com/theme/eden/img/blog/main-blog/xm-blog-1.jpg.pagespeed.ic.Vb11bfvxZv.webp" alt=""
-                                    data-pagespeed-url-hash="1112797043"
+                                    src="https://preview.colorlib.com/theme/eden/img/blog/main-blog/m-blog-5.jpg" alt=""
+                                    data-pagespeed-url-hash="2290796727"
                                     onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                                 <a href="#" class="blog_item_date">
                                     <h3>15</h3>
@@ -56,7 +57,6 @@
                                 </ul>
                             </div>
                         </article>
-
                         <nav class="blog-pagination justify-content-center d-flex">
                             <ul class="pagination">
                                 <li class="page-item">
@@ -104,23 +104,51 @@
                                         <p>(37)</p>
                                     </a>
                                 </li>
-
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>Новости путешествий</p>
+                                        <p>(10)</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>Современные технологии</p>
+                                        <p>(03)</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>Товар</p>
+                                        <p>(11)</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>Вдохновение</p>
+                                        <p>21</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>Здравоохранение(21)</p>
+                                        <p>09</p>
+                                    </a>
+                                </li>
                             </ul>
                         </aside>
                         <aside class="single_sidebar_widget popular_post_widget">
                             <h3 class="widget_title">Недавний пост</h3>
                             <div class="media post_item">
-                                <img src="https://preview.colorlib.com/theme/eden/img/blog/popular-post/post1.jpg" alt="post"
-                                    data-pagespeed-url-hash="984224458"
+                                <img src="https://preview.colorlib.com/theme/eden/img/blog/popular-post/xpost4.jpg.pagespeed.ic.QtzHWu9kKX.webp"
+                                    alt="post" data-pagespeed-url-hash="1867724221"
                                     onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                                 <div class="media-body">
                                     <a href="single-blog.html">
-                                        <h3>С жизни был ты рыбой ...</h3>
+                                        <h3>Asteroids telescope</h3>
                                     </a>
-                                    <p>12 января 2019 г.,</p>
+                                    <p>01 часа(-ов) назад</p>
                                 </div>
                             </div>
-
                         </aside>
                         <aside class="single_sidebar_widget tag_cloud_widget">
                             <h4 class="widget_title">Облака тегов</h4>
@@ -128,20 +156,41 @@
                                 <li>
                                     <a href="#">проект</a>
                                 </li>
-                                
+                                <li>
+                                    <a href="#">люблю</a>
+                                </li>
+                                <li>
+                                    <a href="#">технологии</a>
+                                </li>
+                                <li>
+                                    <a href="#">путешествовать</a>
+                                </li>
+                                <li>
+                                    <a href="#">ресторан</a>
+                                </li>
+                                <li>
+                                    <a href="#">образ жизни</a>
+                                </li>
+                                <li>
+                                    <a href="#">дизайн</a>
+                                </li>
+                                <li>
+                                    <a href="#">иллюстрация</a>
+                                </li>
                             </ul>
                         </aside>
                         <aside class="single_sidebar_widget instagram_feeds">
                             <h4 class="widget_title">Ленты Instagram</h4>
                             <ul class="instagram_row flex-wrap">
+                                
                                 <li>
                                     <a href="#">
-                                        <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/instagram/widget-i1.png" alt=""
-                                            data-pagespeed-url-hash="3882650291"
+                                        <img class="img-fluid"
+                                            src="https://preview.colorlib.com/theme/eden/img/instagram/xwidget-i6.png.pagespeed.ic.CIVhclGmCo.webp"
+                                            alt="" data-pagespeed-url-hash="1060182600"
                                             onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                                     </a>
                                 </li>
-                               
                             </ul>
                         </aside>
                         <aside class="single_sidebar_widget newsletter_widget">
@@ -151,7 +200,7 @@
                                     <input type="email" class="form-control" placeholder="Введите адрес электронной почты" required>
                                 </div>
                                 <button class="button rounded-0 primary-bg text-white w-100"
-                                    type="submit">Подписывайся</button>
+                                    type="submit">Подписаться</button>
                             </form>
                         </aside>
                     </div>
@@ -164,17 +213,46 @@
     <section class="instagram">
         <div class="row no-gutters">
             <div class="col-2">
-                <a href=""><img src="https://preview.colorlib.com/theme/eden/img/instagram/x1.jpg.pagespeed.ic.3_eOt8F4XH.webp" alt=""
-                        data-pagespeed-url-hash="270620287"
+                <a href=""><img
+                        src="https://preview.colorlib.com/theme/eden/img/instagram/x1.jpg.pagespeed.ic.3_eOt8F4XH.webp"
+                        alt="" data-pagespeed-url-hash="270620287"
                         onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
             </div>
-            
+            <div class="col-2">
+                <a href=""><img
+                        src="https://preview.colorlib.com/theme/eden/img/instagram/x2.jpg.pagespeed.ic.gPg6abEm-g.webp"
+                        alt="" data-pagespeed-url-hash="565120208"
+                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+            </div>
+            <div class="col-2">
+                <a href=""><img
+                        src="https://preview.colorlib.com/theme/eden/img/instagram/x3.jpg.pagespeed.ic.5WsMxMN_0v.webp"
+                        alt="" data-pagespeed-url-hash="859620129"
+                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+            </div>
+            <div class="col-2">
+                <a href=""><img
+                        src="https://preview.colorlib.com/theme/eden/img/instagram/x4.jpg.pagespeed.ic.GkjdfAYrlv.webp"
+                        alt="" data-pagespeed-url-hash="1154120050"
+                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+            </div>
+            <div class="col-2">
+                <a href=""><img
+                        src="https://preview.colorlib.com/theme/eden/img/instagram/x5.jpg.pagespeed.ic.fwnMPKrUbk.webp"
+                        alt="" data-pagespeed-url-hash="1448619971"
+                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+            </div>
+            <div class="col-2">
+                <a href=""><img
+                        src="https://preview.colorlib.com/theme/eden/img/instagram/x6.jpg.pagespeed.ic.vu8416XHC0.webp"
+                        alt="" data-pagespeed-url-hash="1743119892"
+                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+            </div>
         </div>
     </section>
     <!-- ================ Instargram Area End ================= -->
     <!-- ================ start footer Area ================= -->
     <?php include "includes/footer.php"; ?>
-    <!-- ================ End footer Area ================= -->
     <!-- ================ End footer Area ================= -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
