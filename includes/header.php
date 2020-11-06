@@ -20,7 +20,7 @@
                                     aria-haspopup="true" aria-expanded="false">Блог</a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item"><a class="nav-link" href="/blog.php">Блог</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="/single-blog.html">Подробности блога</a>
+                                    <li class="nav-item"><a class="nav-link" href="/details.php">Подробности блога</a>
                                     </li>
                                 </ul>
                             </li>
