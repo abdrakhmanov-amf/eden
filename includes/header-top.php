@@ -25,7 +25,7 @@
                         <ul>
                             <li><a id="search" href="javascript:void(0)"><i class="fas fa-search"></i></a></li>
                             <li><a href="/">Главная</a></li>
-                            <li><a href="/signin.php">Вход</a></li>
+                            <li><a href="login">Вход</a></li>
                         </ul>
                     </div>
                 </div>

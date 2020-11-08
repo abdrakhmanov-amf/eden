@@ -30,42 +30,10 @@
     <!-- ================ contact section start ================= -->
     <section class="contact-section area-padding">
         <div class="container">
-            <div class="d-none d-sm-block mb-5 pb-4">
-                <div id="map" style="height: 480px;"></div>
-                <script>
-                    function initMap() {
-                        var uluru = {
-                            lat: -25.363,
-                            lng: 131.044
-                        };
-                        var grayStyles = [{
-                            featureType: "all",
-                            stylers: [{
-                                saturation: -90
-                            }, {
-                                lightness: 50
-                            }]
-                        }, {
-                            elementType: 'labels.text.fill',
-                            stylers: [{
-                                color: '#ccdee9'
-                            }]
-                        }];
-                        var map = new google.maps.Map(document.getElementById('map'), {
-                            center: {
-                                lat: -31.197,
-                                lng: 150.744
-                            },
-                            zoom: 9,
-                            styles: grayStyles,
-                            scrollwheel: false
-                        });
-                    }
-                </script>
-                <script
-                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap">
-                </script>
-            </div>
+            
+              
+     
+            <a class="dg-widget-link" href="http://2gis.kz/shymkent/firm/70000001026667671/center/69.61814045906068,42.341797753508665/zoom/15?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Шымкента</a><div class="dg-widget-link"><a href="http://2gis.kz/shymkent/center/69.61136,42.343843/zoom/15/routeTab/rsType/bus/to/69.61136,42.343843╎IT-Start, школа программирования?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до IT-Start, школа программирования</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":2400,"height":600,"borderColor":"#a3a3a3","pos":{"lat":42.341797753508665,"lon":69.61814045906068,"zoom":15},"opt":{"city":"shymkent"},"org":[{"id":"70000001026667671"}]});</script>
             <div class="row">
                 <div class="col-12">
                     <h2 class="contact-title">Связаться</h2>
@@ -104,6 +72,20 @@
                         </div>
                     </form>
                 </div>
+                    <?php      
+                    if (isset($_POST['message'])){
+                  //  $c = DB::connect();
+                    $query = DB::Query( "INSERT INTO `contact`(`id`, `message`, `name`, `email`, `tema`) VALUES (null ,'$_POST[message]' ,'$_POST[name]' ,'$_POST[email]' ,'$_POST[subject]')");
+
+                    if($query){
+                        echo "yes";
+                    }
+                    else{
+                        echo"INSERT INTO `contact`(`id`, `message`, `name`, `email`, `tema`) VALUES (null ,'$_POST[message]' ,'$_POST[name]' ,'$_POST[email]' ,'$_POST[subject]')";
+                    }
+                    }
+                    
+                    ?>
                 <div class="col-lg-4">
                     <div class="media contact-info">
                         <span class="contact-info__icon"><i class="ti-home"></i></span>
