@@ -61,7 +61,7 @@
                                 <p>$fetch[desk]</p>
                         
                                 <ul class='blog-info-link'>
-                                    <li><a href='#'><i class='far fa-user'></i>$fetch[author]=$fetch[id]</a></li>
+                                    <li><a href='#'><i class='far fa-user'></i>$fetch[author]</a></li>
                                     <li><a href='#'><i class='far fa-comments'></i>03 Комментарии</a></li>
                                 </ul>
                             </div>
