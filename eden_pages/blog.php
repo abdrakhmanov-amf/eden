@@ -156,7 +156,7 @@
                                 
                                 echo "<li>
                                     <a href='#'>$fetch_tag[name]</a>
-                                </li>'";
+                                </li>";
                                 }
                                 ?>
                             </ul>
