@@ -1,7 +1,16 @@
+<?php
+    
+    include "../core/cards.php";
+    // include "../core/DB.php";
+?>
 <!doctype html>
 <html lang="en">
 
-<?php include "../includes/head.php"; ?>
+<?php
+    
+    include "../includes/head.php";
+    
+?>
 
 <body>
     <!--================ Start header Top Area =================-->
@@ -14,28 +23,22 @@
     <section class="fullwidth-block area-padding-bottom">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6 col-lg-6 col-xl-5">
-                    <div class="single-blog">
-                        <div class="thumb">
-                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/x1.jpg.pagespeed.ic.kI3tjlgQ4u.webp" alt=""
-                                data-pagespeed-url-hash="4056137993"
-                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                        </div>
-                        <div class="short_details">
-                            <div class="meta-top d-flex">
-                                <a href="#">Туры и путешествия</a>
-                            </div>
-                            <a class="d-block" href="single-blog.html">
-                                <h4>Создано лицо звезд шестой четвертой
-                                    Земляной небосвод</h4>
-                            </a>
-                            <div class="meta-bottom d-flex">
-                                <a href="#">12 марта 2019.</a>
-                                <a class="dark_font" href="#">Автор Ален Марк</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                    $news_data = DB::Query("SELECT * FROM `blog` WHERE `id`='9'");
+                    $news = DB::Assoc($news_data);
+                    $categories = DB::Query("SELECT * FROM `category` WHERE `id`='$news[category_id]'");
+                    $category = DB::Assoc($categories);
+                        $large_card = new LargeCard;
+                        $large_card->SetData('img/news/'.$news['img'], $news['title'], $category['name'],$news['date'],$news['author']);
+                        echo $large_card->GetData();
+
+                                      
+                
+                ?>    
+
+
+
+
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="single-blog style_two">
                         <div class="thumb">
@@ -60,40 +63,22 @@
                 </div>
                 <div class="col-lg-12 col-xl-3">
                     <div class="row">
-                        <div class="col-12 col-md-6 col-lg-6 col-xl-12">
-                            <div class="single-blog style-three m_b_30">
-                                <div class="thumb">
-                                    <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/x3.jpg.pagespeed.ic.OnOuKbnkfm.webp" alt=""
-                                        data-pagespeed-url-hash="350170539"
-                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                                </div>
-                                <div class="short_details">
-                                    <div class="meta-top d-flex justify-content-center">
-                                        <a href="#">образ жизни</a>
-                                    </div>
-                                    <a class="d-block" href="single-blog.html">
-                                        <h4>Обильно принесенная после дня рыба там картина</h4>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-6 col-xl-12">
-                            <div class="single-blog style-three">
-                                <div class="thumb">
-                                    <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/x4.jpg.pagespeed.ic.F7K5DqzTqo.webp" alt=""
-                                        data-pagespeed-url-hash="644670460"
-                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                                </div>
-                                <div class="short_details">
-                                    <div class="meta-top d-flex justify-content-center">
-                                        <a href="#">образ жизни</a>
-                                    </div>
-                                    <a class="d-block" href="single-blog.html">
-                                        <h4>Обильно принесенная после дня рыба там image</h4>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        
+
+                    <?php
+
+                        $news_data = DB::Query("SELECT * FROM `blog` LIMIT 2");
+                        while($news = DB::Assoc($news_data)) {
+                            $categories = DB::Query("SELECT * FROM `category` WHERE `id`='$news[category_id]'");
+                            $category = DB::Assoc($categories);
+                            $sm_card = new SmCard;
+                            $sm_card->SetData('img/news/'.$news['img'], $news['title'], $category['name'],$news['date']);
+                            echo $sm_card->GetData();
+
+                        }
+
+                    ?> 
+
                     </div>
                 </div>
             </div>
@@ -181,27 +166,18 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-5 col-xl-6">
-                    <div class="single-blog">
-                        <div class="thumb">
-                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/8.jpg" alt="" data-pagespeed-url-hash="1822670144"
-                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                        </div>
-                        <div class="short_details pad_25 ">
-                            <div class="meta-top d-flex">
-                                <a href="#">Туры и путешествия</a>
-                            </div>
-                            <a class="d-block" href="single-blog.html">
-                                <h4>Создано лицо звезд шестой четвертой
-                                    Земляной небосвод</h4>
-                            </a>
-                            <div class="meta-bottom d-flex">
-                                <a href="#">12 марта 2019.</a>
-                                <a class="dark_font" href="#">Автор Ален Марк</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <?php
+                    $news_data = DB::Query("SELECT * FROM `blog` WHERE `id`='9'");
+                    $news = DB::Assoc($news_data);
+                    $categories = DB::Query("SELECT * FROM `category` WHERE `id`='$news[category_id]'");
+                    $category = DB::Assoc($categories);
+                        $large_card2 = new LargeCard;
+                        $large_card2->SetData('img/news/'.$news['img'], $news['title'], $category['name'],$news['date'],$news['author']);
+                        echo $large_card2->GetData();
+
+                                      
+                
+                ?>  
                 <div class="col-lg-7 col-xl-6">
                     <div class="single-blog row no-gutters style-four m_b_30">
                         <div class="col-12 col-sm-7">
@@ -390,74 +366,26 @@
                     <p>Обильно подкрадывающийся дух может явиться четвертым нам.</p>
                 </div>
             </div>
+
+
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="single-blog style-five">
-                        <div class="thumb">
-                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/15.jpg" alt="" data-pagespeed-url-hash="704644682"
-                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                        </div>
-                        <div class="short_details">
-                            <div class="meta-top d-flex">
-                                <a href="#">туфли</a>/
-                                <a href="#">15 марта 2019 г.,</a>
-                            </div>
-                            <a class="d-block" href="single-blog.html">
-                                <h4>Shall for rule whose toge one
-                                    may heaven to dat</h4>
-                            </a>
-                            <div class="meta-bottom d-flex">
-                                <a href="#"><i class="ti-comment"></i>05 comment</a>
-                                <a href="#"><i class="ti-heart"></i> 0 like</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-blog style-five">
-                        <div class="thumb">
-                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/16.jpg" alt="" data-pagespeed-url-hash="999144603"
-                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                        </div>
-                        <div class="short_details">
-                            <div class="meta-top d-flex">
-                                <a href="#">туфли</a>/
-                                <a href="#">15 марта 2019 г.,</a>
-                            </div>
-                            <a class="d-block" href="single-blog.html">
-                                <h4>Shall for rule whose toge one
-                                    may heaven to dat</h4>
-                            </a>
-                            <div class="meta-bottom d-flex">
-                                <a href="#"><i class="ti-comment"></i>05 comment</a>
-                                <a href="#"><i class="ti-heart"></i> 0 like</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-blog style-five">
-                        <div class="thumb">
-                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/17.jpg" alt="" data-pagespeed-url-hash="1293644524"
-                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                        </div>
-                        <div class="short_details">
-                            <div class="meta-top d-flex">
-                                <a href="#">туфли</a>/
-                                <a href="#">15 марта 2019 г.,</a>
-                            </div>
-                            <a class="d-block" href="single-blog.html">
-                                <h4>Shall for rule whose toge one
-                                    may heaven to dat</h4>
-                            </a>
-                            <div class="meta-bottom d-flex">
-                                <a href="#"><i class="ti-comment"></i>05 comment</a>
-                                <a href="#"><i class="ti-heart"></i> 0 like</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+                <?php
+
+                    $news_data = DB::Query("SELECT * FROM `blog` LIMIT 3, 6");
+                    while($news = DB::Assoc($news_data)) {
+                        $categories = DB::Query("SELECT * FROM `category` WHERE `id`='$news[category_id]'");
+                        $category = DB::Assoc($categories);
+                        $card = new MediumCard;
+                        $card->SetData('img/news/'.$news['img'], $news['title'], $category['name'],$news['date']);
+                        echo $card->GetData();
+
+                    }
+                    
+                ?>    
             </div>
+
+
         </div>
     </div>
     <!--================ three-block section end =================-->
@@ -495,94 +423,24 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <div class="single-blog style-five small">
-                                <div class="thumb">
-                                    <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/19.jpg" alt=""
-                                        data-pagespeed-url-hash="1882644366"
-                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                                </div>
-                                <div class="short_details">
-                                    <div class="meta-top d-flex">
-                                        <a href="#">туфли</a>/
-                                        <a href="#">15 марта 2019 г.,</a>
-                                    </div>
-                                    <a class="d-block" href="single-blog.html">
-                                        <h4>Должен для правила whoses
-                                            пусть небеса</h4>
-                                    </a>
-                                    <div class="meta-bottom d-flex">
-                                        <a href="#">15 марта 2019 г.,</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="single-blog style-five small">
-                                <div class="thumb">
-                                    <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/20.jpg" alt=""
-                                        data-pagespeed-url-hash="3451896360"
-                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                                </div>
-                                <div class="short_details">
-                                    <div class="meta-top d-flex">
-                                        <a href="#">туфли</a>/
-                                        <a href="#">15 марта 2019 г.,</a>
-                                    </div>
-                                    <a class="d-block" href="single-blog.html">
-                                        <h4>Должен для правила whoses
-                                            пусть небеса</h4>
-                                    </a>
-                                    <div class="meta-bottom d-flex">
-                                        <a href="#">15 марта 2019 г.,</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="single-blog style-five small">
-                                <div class="thumb">
-                                    <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/x21.jpg.pagespeed.ic.WyVqQeP8d-.webp"
-                                        alt="" data-pagespeed-url-hash="3746396281"
-                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                                </div>
-                                <div class="short_details">
-                                    <div class="meta-top d-flex">
-                                        <a href="#">туфли</a>/
-                                        <a href="#">15 марта 2019 г.,</a>
-                                    </div>
-                                    <a class="d-block" href="single-blog.html">
-                                        <h4>Должен для правила whoses
-                                            пусть небеса</h4>
-                                    </a>
-                                    <div class="meta-bottom d-flex">
-                                        <a href="#">15 марта 2019 г.,</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="single-blog style-five small">
-                                <div class="thumb">
-                                    <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/x22.jpg.pagespeed.ic.Pl_jvmNF5_.webp"
-                                        alt="" data-pagespeed-url-hash="4040896202"
-                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                                </div>
-                                <div class="short_details">
-                                    <div class="meta-top d-flex">
-                                        <a href="#">туфли</a>/
-                                        <a href="#">15 марта 2019 г.,</a>
-                                    </div>
-                                    <a class="d-block" href="single-blog.html">
-                                        <h4>Должен для правила whoses
-                                            пусть небеса</h4>
-                                    </a>
-                                    <div class="meta-bottom d-flex">
-                                        <a href="#">15 марта 2019 г.,</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+
+
+                        <?php
+                            $n_data = DB::Query("SELECT * FROM `blog` LIMIT 4 ");
+                            while($n = DB::Assoc($n_data)) {
+                                $categories = DB::Query("SELECT * FROM `category` WHERE `id`='$n[category_id]'");
+                                $category = DB::Assoc($categories);
+                                $small_card = new SmallCard;
+                                $small_card->SetData('img/news/'.$n['img'], $n['title'], $category['name'],$n['date']);
+                                echo $small_card->GetData();
+                            }
+                        ?>
+
+
+
+
+
                     </div>
                 </div>
             </div>

@@ -1,9 +1,9 @@
 <?php 
     class DB{
-       public function __construct()
-       {
-          session_start();
-       }
+      //  public function __construct()
+      //  {
+      //     session_start();
+      //  }
  //   connect to base
         private static function connect()
         {
