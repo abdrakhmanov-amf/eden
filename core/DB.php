@@ -24,6 +24,7 @@
         {
            return mysqli_num_rows($q);
         }
+
     }
 
 ?>

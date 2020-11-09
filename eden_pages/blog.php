@@ -36,14 +36,12 @@
                 <!-- PHP POST -->
                     <?php 
 
-                    $connect = mysqli_connect("localhost", "root", "root", "eden");
-                    $query = mysqli_query($connect, "SELECT `id`, `title`, `desk`, `img`, `author`, `date`, `is_public`, `category_id`, `tag_id` FROM `blog`");
-                    $query_category = mysqli_query($connect, "SELECT `id`, `name` FROM `category`"); 
+                    $query = DB::Query("SELECT * FROM `blog`");
 
-                    while($fetch = mysqli_fetch_assoc($query) and $fetch_category = mysqli_fetch_assoc($query_category)){
+                    while($fetch = DB::Assoc($query)){
+
+                       $category = DB::Assoc(DB::Query("SELECT `name` FROM `category` WHERE `id`='$fetch[category_id]'"))['name'];
                         
-                    
-
                         echo "<article class='blog_item'>
                             <div class='blog_item_img'>
                                 <img class='card-img rounded-0'
@@ -61,7 +59,7 @@
                                 <p>$fetch[desk]</p>
                         
                                 <ul class='blog-info-link'>
-                                    <li><a href='#'><i class='far fa-user'></i>$fetch[author]</a></li>
+                                    <li><a href='#'><i class='far fa-user'></i> $category</a></li>
                                     <li><a href='#'><i class='far fa-comments'></i>03 Комментарии</a></li>
                                 </ul>
                             </div>

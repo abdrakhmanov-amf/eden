@@ -18,6 +18,9 @@ header('Content-Type: text/html; charset=utf-8'); // кодировка
         '/details'=>'eden_pages/details.php',
         '/latest-news'=>'eden_pages/latest-news.php',
 
+        '/test'=>'/core/news.php',
+
+
     //user page 
 
     //admin page
