@@ -39,8 +39,7 @@
                     <h2 class="contact-title">Связаться</h2>
                 </div>
                 <div class="col-lg-8">
-                    <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm"
-                        novalidate>
+                    <form class="form-contact" method="post" action="/contacts">
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
@@ -72,20 +71,7 @@
                         </div>
                     </form>
                 </div>
-                    <?php      
-                    if (isset($_POST['message'])){
-                  //  $c = DB::connect();
-                    $query = DB::Query( "INSERT INTO `contact`(`id`, `message`, `name`, `email`, `tema`) VALUES (null ,'$_POST[message]' ,'$_POST[name]' ,'$_POST[email]' ,'$_POST[subject]')");
-
-                    if($query){
-                        echo "yes";
-                    }
-                    else{
-                        echo"INSERT INTO `contact`(`id`, `message`, `name`, `email`, `tema`) VALUES (null ,'$_POST[message]' ,'$_POST[name]' ,'$_POST[email]' ,'$_POST[subject]')";
-                    }
-                    }
-                    
-                    ?>
+                  
                 <div class="col-lg-4">
                     <div class="media contact-info">
                         <span class="contact-info__icon"><i class="ti-home"></i></span>
