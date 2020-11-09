@@ -39,8 +39,7 @@
                     <h2 class="contact-title">Связаться</h2>
                 </div>
                 <div class="col-lg-8">
-                    <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm"
-                        novalidate>
+                    <form class="form-contact" method="post" action="/contacts">
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
