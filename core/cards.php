@@ -49,7 +49,46 @@ class LargeCard extends Card {
     }
 }
 
+class LgCard extends Card {
+    public $date = '';
+    public $author ='';
+    public function SetData($i,$t,$c,$d,$a)
+    {
+        $this->img = $i;
+        $this->title = $t;
+        $this->category = $c;
+        $this->date = $d;
+        $this->author = $a;
 
+    }
+
+    public function GetData()
+    {
+        return "
+        <div class='col-md-6 col-lg-6 col-xl-4'>
+                    <div class='single-blog style_two'>
+                        <div class='thumb'>
+                            <img class='img-fluid' src='$this->img' alt=''
+                                data-pagespeed-url-hash='55670618'
+                                onload='pagespeed.CriticalImages.checkImageForCriticality(this);'>
+                        </div>
+                        <div class='short_details text-center '>
+                            <div class='meta-top d-flex justify-content-center'>
+                                <a href='#'>$this->category</a>
+                            </div>
+                            <a class='d-block' href='single-blog.html'>
+                                <h4>$this->title</h4>
+                            </a>
+                            <div class='meta-bottom d-flex justify-content-center'>
+                                <a href='#'>$this->date г.</a>
+                                <a href='#'>$this->author</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                ";
+    }
+}
 class MediumCard extends Card {
     public $date = '';
 

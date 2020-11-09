@@ -32,35 +32,26 @@
                         $large_card->SetData('img/news/'.$news['img'], $news['title'], $category['name'],$news['date'],$news['author']);
                         echo $large_card->GetData();
 
-                                      
+                            
+                        $n_data = DB::Query("SELECT * FROM `blog` WHERE `id`='10'");
+                        $n = DB::Assoc($n_data);
+                        $categories = DB::Query("SELECT * FROM `category` WHERE `id`='$news[category_id]'");
+                        $category = DB::Assoc($categories);
+                        $lg_card = new LgCard;
+                        $lg_card->SetData('img/news/'.$n['img'], $n['title'], $category['name'],$n['date'],$n['author']);
+                        echo $lg_card->GetData();
+
+
                 
                 ?>    
 
 
 
 
-                <div class="col-md-6 col-lg-6 col-xl-4">
-                    <div class="single-blog style_two">
-                        <div class="thumb">
-                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/x2.jpg.pagespeed.ic.ZtLfecZbHD.webp" alt=""
-                                data-pagespeed-url-hash="55670618"
-                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                        </div>
-                        <div class="short_details text-center ">
-                            <div class="meta-top d-flex justify-content-center">
-                                <a href="#">Туры и путешествия</a>
-                            </div>
-                            <a class="d-block" href="single-blog.html">
-                                <h4>Создано лицо звезд шестой четвертой
-                                    Земляной небосвод</h4>
-                            </a>
-                            <div class="meta-bottom d-flex justify-content-center">
-                                <a href="#">12 марта 2019.</a>
-                                <a href="#">Автор Ален Марк</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
+
+
+
                 <div class="col-lg-12 col-xl-3">
                     <div class="row">
                         
@@ -167,7 +158,7 @@
             </div>
             <div class="row">
             <?php
-                    $news_data = DB::Query("SELECT * FROM `blog` WHERE `id`='9'");
+                    $news_data = DB::Query("SELECT * FROM `blog` WHERE `id`='1'");
                     $news = DB::Assoc($news_data);
                     $categories = DB::Query("SELECT * FROM `category` WHERE `id`='$news[category_id]'");
                     $category = DB::Assoc($categories);
@@ -366,7 +357,7 @@
                     <p>Обильно подкрадывающийся дух может явиться четвертым нам.</p>
                 </div>
             </div>
-
+            
 
             <div class="row">
 
@@ -399,28 +390,15 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="single-blog style-five">
-                        <div class="thumb">
-                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/18.jpg" alt="" data-pagespeed-url-hash="1588144445"
-                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                        </div>
-                        <div class="short_details">
-                            <div class="meta-top d-flex">
-                                <a href="#">туфли</a>/
-                                <a href="#">15 марта 2019 г.,</a>
-                            </div>
-                            <a class="d-block" href="single-blog.html">
-                                <h4>Brought dreepeth youll blessed
-                                    from whose signs over</h4>
-                            </a>
-                            <div class="meta-bottom d-flex">
-                                <a href="#"><i class="ti-comment"></i>05 comment</a>
-                                <a href="#"><i class="ti-heart"></i> 0 like</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <?php
+                        $news_data = DB::Query("SELECT * FROM `blog` WHERE `id`='9'");
+                        $news = DB::Assoc($news_data);
+                        $categories = DB::Query("SELECT * FROM `category` WHERE `id`='$news[category_id]'");
+                        $category = DB::Assoc($categories);
+                        $large_card3 = new LargeCard;
+                        $large_card3->SetData('img/news/'.$news['img'], $news['title'], $category['name'],$news['date'],$news['author']);
+                        echo $large_card3->GetData();
+                    ?>
                 <div class="col-lg-6">
                     <div class="row">
 
