@@ -33,30 +33,44 @@
             <div class="row">
                 <div class="col-lg-8 mb-5 mb-lg-0">
                     <div class="blog_left_sidebar">
+                <!-- PHP POST -->
+                    <?php 
 
-                        <article class="blog_item">
-                            <div class="blog_item_img">
-                                <img class="card-img rounded-0"
-                                    src="https://preview.colorlib.com/theme/eden/img/blog/main-blog/m-blog-5.jpg" alt=""
-                                    data-pagespeed-url-hash="2290796727"
-                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                                <a href="#" class="blog_item_date">
-                                    <h3>15</h3>
+                    $connect = mysqli_connect("localhost", "root", "root", "eden");
+                    $query = mysqli_query($connect, "SELECT `id`, `title`, `desk`, `img`, `author`, `date`, `is_public`, `category_id`, `tag_id` FROM `blog`");
+                    $query_category = mysqli_query($connect, "SELECT `id`, `name` FROM `category`"); 
+
+                    while($fetch = mysqli_fetch_assoc($query) and $fetch_category = mysqli_fetch_assoc($query_category)){
+                        
+                    
+
+                        echo "<article class='blog_item'>
+                            <div class='blog_item_img'>
+                                <img class='card-img rounded-0'
+                                    src='https://preview.colorlib.com/theme/eden/img/blog/main-blog/m-blog-5.jpg' alt='
+                                    data-pagespeed-url-hash='2290796727'
+                                    onload='pagespeed.CriticalImages.checkImageForCriticality(this);'>
+                                <a href='#' class='blog_item_date'>
+                                    <h3>$fetch[date]</h3>
                                     <p>Янв</p>
                                 </a>
                             </div>
-                            <div class="blog_details">
-                                <a class="d-inline-block" href="single-blog.html">
-                                    <h2>Google подписал договор о новом 35-этажном офисе</h2>
+                            <div class='blog_details'>
+                                <a class='d-inline-block' href='single-blog.html'>
+                                    <h2>$fetch[title]</h2>
                                 </a>
-                                <p>То, что звезды доминиона освещают доминион, разделяют годы на четвертое, не имеют звезд, это то, что
-                                    он сначала земля его без неба вместо семян это второе утро говоря.</p>
-                                <ul class="blog-info-link">
-                                    <li><a href="#"><i class="far fa-user"></i>Путешествия, Образ жизни</a></li>
-                                    <li><a href="#"><i class="far fa-comments"></i>03 Комментарии</a></li>
+                                <p>$fetch[desk]</p>
+                        
+                                <ul class='blog-info-link'>
+                                    <li><a href='#'><i class='far fa-user'></i>$fetch_category[name]=$fetch[id]</a></li>
+                                    <li><a href='#'><i class='far fa-comments'></i>03 Комментарии</a></li>
                                 </ul>
                             </div>
-                        </article>
+                        </article>";
+                    };
+
+                        ?>
+                    <!-- /PHP POST -->
                         <nav class="blog-pagination justify-content-center d-flex">
                             <ul class="pagination">
                                 <li class="page-item">
@@ -95,46 +109,27 @@
                                     type="submit">Поиск</button>
                             </form>
                         </aside>
-                        <aside class="single_sidebar_widget post_category_widget">
+                            <aside class="single_sidebar_widget post_category_widget">
                             <h4 class="widget_title">Категория</h4>
                             <ul class="list cat-list">
-                                <li>
-                                    <a href="#" class="d-flex">
-                                        <p>Ресторанная еда</p>
+
+                            <?php
+                            $connect = mysqli_connect("localhost", "root", "root", "eden");
+                            $query = mysqli_query($connect, "SELECT `id`, `name` FROM `category`");
+                            while($fetch = mysqli_fetch_assoc($query)){
+                                echo "<li>
+                                    <a href='#' class='d-flex'>
+                                        <p>$fetch[name]</p>
                                         <p>(37)</p>
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex">
-                                        <p>Новости путешествий</p>
-                                        <p>(10)</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex">
-                                        <p>Современные технологии</p>
-                                        <p>(03)</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex">
-                                        <p>Товар</p>
-                                        <p>(11)</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex">
-                                        <p>Вдохновение</p>
-                                        <p>21</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex">
-                                        <p>Здравоохранение(21)</p>
-                                        <p>09</p>
-                                    </a>
-                                </li>
-                            </ul>
+                                </li>";
+                                
+                            };
+                                ?>
+
+                                </ul>
+                                
+                            
                         </aside>
                         <aside class="single_sidebar_widget popular_post_widget">
                             <h3 class="widget_title">Недавний пост</h3>
@@ -153,30 +148,17 @@
                         <aside class="single_sidebar_widget tag_cloud_widget">
                             <h4 class="widget_title">Облака тегов</h4>
                             <ul class="list">
-                                <li>
-                                    <a href="#">проект</a>
-                                </li>
-                                <li>
-                                    <a href="#">люблю</a>
-                                </li>
-                                <li>
-                                    <a href="#">технологии</a>
-                                </li>
-                                <li>
-                                    <a href="#">путешествовать</a>
-                                </li>
-                                <li>
-                                    <a href="#">ресторан</a>
-                                </li>
-                                <li>
-                                    <a href="#">образ жизни</a>
-                                </li>
-                                <li>
-                                    <a href="#">дизайн</a>
-                                </li>
-                                <li>
-                                    <a href="#">иллюстрация</a>
-                                </li>
+                                <?php
+                                $connect = mysqli_connect("localhost", "root", "root", "eden");
+                                $query = mysqli_query($connect, "SELECT * FROM `tag`");
+
+                                while($fetch_tag = mysqli_fetch_assoc($query)){
+                                
+                                echo "<li>
+                                    <a href='#'>$fetch_tag[name]</a>
+                                </li>";
+                                }
+                                ?>
                             </ul>
                         </aside>
                         <aside class="single_sidebar_widget instagram_feeds">
