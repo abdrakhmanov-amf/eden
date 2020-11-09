@@ -71,20 +71,7 @@
                         </div>
                     </form>
                 </div>
-                    <?php      
-                    if (isset($_POST['message'])){
-                  //  $c = DB::connect();
-                    $query = DB::Query( "INSERT INTO `contact`(`id`, `message`, `name`, `email`, `tema`) VALUES (null ,'$_POST[message]' ,'$_POST[name]' ,'$_POST[email]' ,'$_POST[subject]')");
-
-                    if($query){
-                        echo "yes";
-                    }
-                    else{
-                        echo"INSERT INTO `contact`(`id`, `message`, `name`, `email`, `tema`) VALUES (null ,'$_POST[message]' ,'$_POST[name]' ,'$_POST[email]' ,'$_POST[subject]')";
-                    }
-                    }
-                    
-                    ?>
+                  
                 <div class="col-lg-4">
                     <div class="media contact-info">
                         <span class="contact-info__icon"><i class="ti-home"></i></span>
