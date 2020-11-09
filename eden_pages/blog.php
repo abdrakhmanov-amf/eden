@@ -47,9 +47,8 @@
                         echo "<article class='blog_item'>
                             <div class='blog_item_img'>
                                 <img class='card-img rounded-0'
-                                    src='https://preview.colorlib.com/theme/eden/img/blog/main-blog/m-blog-5.jpg' alt='
-                                    data-pagespeed-url-hash='2290796727'
-                                    onload='pagespeed.CriticalImages.checkImageForCriticality(this);'>
+                                    src='/img/news/$fetch[img]' alt='
+                                    '>
                                 <a href='#' class='blog_item_date'>
                                     <h3>$fetch[date]</h3>
                                     <p>Янв</p>
@@ -62,7 +61,7 @@
                                 <p>$fetch[desk]</p>
                         
                                 <ul class='blog-info-link'>
-                                    <li><a href='#'><i class='far fa-user'></i>$fetch_category[name]=$fetch[id]</a></li>
+                                    <li><a href='#'><i class='far fa-user'></i>$fetch[author]=$fetch[id]</a></li>
                                     <li><a href='#'><i class='far fa-comments'></i>03 Комментарии</a></li>
                                 </ul>
                             </div>
