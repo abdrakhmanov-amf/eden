@@ -22,7 +22,7 @@
     <!--================Fullwidth block Area =================-->
     <section class="fullwidth-block area-padding-bottom">
         <div class="container-fluid">
-           <?php include "NewsBlog/Main.php" ?>
+            <?php include "NewsBlog/Main.php" ?>
         </div>
     </section>
     <!--================Fullwidth block Area end =================-->
@@ -36,8 +36,7 @@
                             <div class="thumb">
                                 <img class="img-fluid"
                                     src="https://preview.colorlib.com/theme/eden/img/magazine/x5.jpg.pagespeed.ic.qaPElY7E5w.webp"
-                                    alt="" data-pagespeed-url-hash="939170381"
-                                    >
+                                    alt="" data-pagespeed-url-hash="939170381">
                             </div>
                         </div>
                         <div class="col-12 col-sm-7">
@@ -64,8 +63,7 @@
                         <div class="thumb">
                             <img class="img-fluid"
                                 src="https://preview.colorlib.com/theme/eden/img/magazine/x6.jpg.pagespeed.ic.CT49rK76fu.webp"
-                                alt="" data-pagespeed-url-hash="1233670302"
-                                >
+                                alt="" data-pagespeed-url-hash="1233670302">
                         </div>
                         <div class="short_details ">
                             <div class="meta-top d-flex">
@@ -82,8 +80,7 @@
                     <div class="single-blog style_five">
                         <div class="thumb">
                             <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/7.jpg"
-                                alt="" data-pagespeed-url-hash="1528170223"
-                                >
+                                alt="" data-pagespeed-url-hash="1528170223">
                         </div>
                         <div class="short_details ">
                             <div class="meta-top d-flex">
@@ -142,8 +139,7 @@
                         <div class="col-12 col-sm-5">
                             <div class="thumb">
                                 <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/9.jpg"
-                                    alt="" data-pagespeed-url-hash="2117170065"
-                                    >
+                                    alt="" data-pagespeed-url-hash="2117170065">
                             </div>
                         </div>
                     </div>
@@ -151,8 +147,7 @@
                         <div class="col-12 col-sm-5">
                             <div class="thumb">
                                 <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/10.jpg"
-                                    alt="" data-pagespeed-url-hash="3527112373"
-                                    >
+                                    alt="" data-pagespeed-url-hash="3527112373">
                             </div>
                         </div>
                         <div class="col-12 col-sm-7">
@@ -177,8 +172,7 @@
                 <div class="col-12">
                     <div class="addvertise">
                         <a href=""><img src="https://preview.colorlib.com/theme/eden/img/banner/add.jpg" alt=""
-                                data-pagespeed-url-hash="2179791821"
-                                ></a>
+                                data-pagespeed-url-hash="2179791821"></a>
                     </div>
                 </div>
             </div>
@@ -199,8 +193,7 @@
                     <div class="single-blog video-style">
                         <div class="thumb">
                             <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/11.jpg"
-                                alt="" data-pagespeed-url-hash="3821612294"
-                                >
+                                alt="" data-pagespeed-url-hash="3821612294">
                             <div class="play_btn">
                                 <a class="play-video" href="https://www.youtube.com/watch?v=MrRvX5I8PyY"
                                     data-animate="zoomIn" data-duration="1.5s" data-delay="0.1s"><span
@@ -228,8 +221,7 @@
                     <div class="single-blog video-style small row m_b_30">
                         <div class="thumb col-12 col-sm-5">
                             <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/12.jpg"
-                                alt="" data-pagespeed-url-hash="4116112215"
-                                >
+                                alt="" data-pagespeed-url-hash="4116112215">
                             <div class="play_btn">
                                 <a class="play-video" href="https://www.youtube.com/watch?v=MrRvX5I8PyY"
                                     data-animate="zoomIn" data-duration="1.5s" data-delay="0.1s"><span
@@ -254,8 +246,7 @@
                     <div class="single-blog video-style small row m_b_30 ">
                         <div class="thumb col-12 col-sm-5">
                             <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/13.jpg"
-                                alt="" data-pagespeed-url-hash="115644840"
-                                >
+                                alt="" data-pagespeed-url-hash="115644840">
                             <div class="play_btn">
                                 <a class="play-video" href="https://www.youtube.com/watch?v=MrRvX5I8PyY"
                                     data-animate="zoomIn" data-duration="1.5s" data-delay="0.1s"><span
@@ -280,8 +271,7 @@
                     <div class="single-blog video-style small row">
                         <div class="thumb col-12 col-sm-5">
                             <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/14.jpg"
-                                alt="" data-pagespeed-url-hash="410144761"
-                                >
+                                alt="" data-pagespeed-url-hash="410144761">
                             <div class="play_btn">
                                 <a class="play-video" href="https://www.youtube.com/watch?v=MrRvX5I8PyY"
                                     data-animate="zoomIn" data-duration="1.5s" data-delay="0.1s"><span
@@ -351,38 +341,140 @@
             </div>
             <div class="row">
                 <?php
-                        $news_data = DB::Query("SELECT * FROM `blog` WHERE `id`='9'");
-                        $news = DB::Assoc($news_data);
-                        $categories = DB::Query("SELECT * FROM `category` WHERE `id`='$news[category_id]'");
-                        $category = DB::Assoc($categories);
-                        $large_card3 = new LargeCard;
-                        $large_card3->SetData('img/news/'.$news['img'], $news['title'], $category['name'],$news['date'],$news['author']);
-                        echo $large_card3->GetData();
+                       include "../core/fashion_news.php";
+
+                       $n1 = new News;
+                       $news_first = $n1->main(12,0,1);  // all data news
                     ?>
                 <div class="col-lg-6">
                     <div class="row">
 
 
 
+                        <div class="col-md-6 col-lg-6 col-xl-5">
+                            <div class="single-blog">
+                                <div class="thumb">
+                                    <img class="img-fluid" src="/img/news/<?=$news_first['img']?>" alt=""
+                                        data-pagespeed-url-hash="4056137993">
+                                </div>
+                                <div class="short_details">
+                                    <div class="meta-top d-flex">
+                                        <a href="#"><?=$n1->get_category()?></a>
+                                    </div>
+                                    <a class="d-block" href="single-blog.html">
+                                        <h4><?=$news_first['title']?></h4>
+                                    </a>
+                                    <div class="meta-bottom d-flex">
+                                        <a href="#"><?=$news_first['date']?> </a>
+                                        <a class="dark_font" href="#"> By <?=$news_first['author']?></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                         <?php
-                            $n_data = DB::Query("SELECT * FROM `blog` LIMIT 4 ");
-                            while($n = DB::Assoc($n_data)) {
-                                $categories = DB::Query("SELECT * FROM `category` WHERE `id`='$n[category_id]'");
-                                $category = DB::Assoc($categories);
-                                $small_card = new SmallCard;
-                                $small_card->SetData('img/news/'.$n['img'], $n['title'], $category['name'],$n['date']);
-                                echo $small_card->GetData();
-                            }
-                        ?>
-
-
-
+   $n2 = new News;
+   $news_second = $n2->main(4,0,1);
+   $n3 = new News;
+   $news_third = $n3->main(5,0,1);  // all data news
+?>
+                         <div class="col-lg-12 col-xl-3">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-6 col-xl-12">
+                                    <div class="single-blog style-three m_b_30">
+                                        <div class="thumb">
+                                            <img class="img-fluid" src="/img/news/<?=$news_second['img']?>" alt=""
+                                                data-pagespeed-url-hash="350170539">
+                                        </div>
+                                        <div class="short_details">
+                                            <div class="meta-top d-flex justify-content-center">
+                                                <a href="#"><?=$n2->get_category()?></a>
+                                            </div>
+                                            <a class="d-block" href="single-blog.html">
+                                                <h4><?=$news_second['title']?></h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6 col-xl-12">
+                                    <div class="single-blog style-three m_b_30">
+                                        <div class="thumb">
+                                            <img class="img-fluid" src="/img/news/<?=$news_third['img']?>" alt=""
+                                                data-pagespeed-url-hash="350170539">
+                                        </div>
+                                        <div class="short_details">
+                                            <div class="meta-top d-flex justify-content-center">
+                                                <a href="#"><?=$n3->get_category()?></a>
+                                            </div>
+                                            <a class="d-block" href="single-blog.html">
+                                                <h4><?=$news_third['title']?></h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 
                     </div>
+
+
+                        <?php
+   $n4 = new News;
+   $news_sport_1 = $n3->main(2,0,1);  // all data news
+
+   $n5 = new News;
+   $news_sport_2 = $n4->main(11,0,1);  // all data news
+?>
+                        <div class="col-lg-12 col-xl-3">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-6 col-xl-12">
+                                    <div class="single-blog style-three m_b_30">
+                                        <div class="thumb">
+                                            <img class="img-fluid" src="/img/news/<?=$news_sport_1['img']?>" alt=""
+                                                data-pagespeed-url-hash="350170539">
+                                        </div>
+                                        <div class="short_details">
+                                            <div class="meta-top d-flex justify-content-center">
+                                                <a href="#"><?=$n4->get_category()?></a>
+                                            </div>
+                                            <a class="d-block" href="single-blog.html">
+                                                <h4><?=$news_sport_1['title']?></h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6 col-xl-12">
+                                    <div class="single-blog style-three m_b_30">
+                                        <div class="thumb">
+                                            <img class="img-fluid" src="/img/news/<?=$news_sport_2['img']?>" alt=""
+                                                data-pagespeed-url-hash="350170539">
+                                        </div>
+                                        <div class="short_details">
+                                            <div class="meta-top d-flex justify-content-center">
+                                                <a href="#"><?=$n5->get_category()?></a>
+                                            </div>
+                                            <a class="d-block" href="single-blog.html">
+                                                <h4><?=$news_sport_2['title']?></h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!--================ Latest news section end =================-->
     <!-- ================ Instargram Area Starts ================= -->
@@ -391,38 +483,32 @@
             <div class="col-2">
                 <a href=""><img
                         src="https://preview.colorlib.com/theme/eden/img/instagram/x1.jpg.pagespeed.ic.3_eOt8F4XH.webp"
-                        alt="" data-pagespeed-url-hash="270620287"
-                        ></a>
+                        alt="" data-pagespeed-url-hash="270620287"></a>
             </div>
             <div class="col-2">
                 <a href=""><img
                         src="https://preview.colorlib.com/theme/eden/img/instagram/x2.jpg.pagespeed.ic.gPg6abEm-g.webp"
-                        alt="" data-pagespeed-url-hash="565120208"
-                        ></a>
+                        alt="" data-pagespeed-url-hash="565120208"></a>
             </div>
             <div class="col-2">
                 <a href=""><img
                         src="https://preview.colorlib.com/theme/eden/img/instagram/x3.jpg.pagespeed.ic.5WsMxMN_0v.webp"
-                        alt="" data-pagespeed-url-hash="859620129"
-                        ></a>
+                        alt="" data-pagespeed-url-hash="859620129"></a>
             </div>
             <div class="col-2">
                 <a href=""><img
                         src="https://preview.colorlib.com/theme/eden/img/instagram/x4.jpg.pagespeed.ic.GkjdfAYrlv.webp"
-                        alt="" data-pagespeed-url-hash="1154120050"
-                        ></a>
+                        alt="" data-pagespeed-url-hash="1154120050"></a>
             </div>
             <div class="col-2">
                 <a href=""><img
                         src="https://preview.colorlib.com/theme/eden/img/instagram/x5.jpg.pagespeed.ic.fwnMPKrUbk.webp"
-                        alt="" data-pagespeed-url-hash="1448619971"
-                        ></a>
+                        alt="" data-pagespeed-url-hash="1448619971"></a>
             </div>
             <div class="col-2">
                 <a href=""><img
                         src="https://preview.colorlib.com/theme/eden/img/instagram/x6.jpg.pagespeed.ic.vu8416XHC0.webp"
-                        alt="" data-pagespeed-url-hash="1743119892"
-                        ></a>
+                        alt="" data-pagespeed-url-hash="1743119892"></a>
             </div>
         </div>
     </section>

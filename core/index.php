@@ -19,6 +19,7 @@ header('Content-Type: text/html; charset=utf-8'); // кодировка
         '/latest-news'=>'eden_pages/latest-news.php',
 
         '/test'=>'/core/news.php',
+        '/tests'=>'/core/fashion_news.php',
 
 
     //user page 
@@ -29,7 +30,7 @@ header('Content-Type: text/html; charset=utf-8'); // кодировка
         '/regis_to_new_user' =>'query/regis.php',
         '/sign' =>'query/sign.php',
         '/contacts' =>'query/contact.php',
-        
+        '/blogs' =>'query/blog.php',
 
         '/404' =>'error/404.html',
 

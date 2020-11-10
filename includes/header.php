@@ -19,7 +19,7 @@
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
                                     aria-haspopup="true" aria-expanded="false">Блог</a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="/blog">Блог</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/blogs">Блог</a></li>
                                     <li class="nav-item"><a class="nav-link" href="/details">Подробности блога</a>
                                     </li>
                                 </ul>
