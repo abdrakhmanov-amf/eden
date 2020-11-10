@@ -1,7 +1,6 @@
 <?php
     
     include "../core/cards.php";
-    // include "../core/DB.php";
 ?>
 <!doctype html>
 <html lang="en">
@@ -27,119 +26,61 @@
     </section>
     <!--================Fullwidth block Area end =================-->
     <!--================ First block section start =================-->
-    <section class="first_block">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-xl-6">
-                    <div class="single-blog row no-gutters style-four border_one">
-                        <div class="col-12 col-sm-5">
-                            <div class="thumb">
-                                <img class="img-fluid"
-                                    src="https://preview.colorlib.com/theme/eden/img/magazine/x5.jpg.pagespeed.ic.qaPElY7E5w.webp"
-                                    alt="" data-pagespeed-url-hash="939170381">
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-7">
-                            <div class="short_details">
-                                <div class="meta-top d-flex">
-                                    <a href="#">Туры и путешествия</a>
-                                </div>
-                                <a class="d-block" href="single-blog.html">
-                                    <h4>Принесли весь день доми
-                                        Нион появляется из
-                                        подчинить себе власть
-                                        небосвод над лицом</h4>
-                                </a>
-                                <div class="meta-bottom d-flex">
-                                    <a href="#">12 марта 2019.</a>
-                                    <a class="dark_font" href="#">Автор Ален Марк</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3">
-                    <div class="single-blog style_five">
-                        <div class="thumb">
-                            <img class="img-fluid"
-                                src="https://preview.colorlib.com/theme/eden/img/magazine/x6.jpg.pagespeed.ic.CT49rK76fu.webp"
-                                alt="" data-pagespeed-url-hash="1233670302">
-                        </div>
-                        <div class="short_details ">
-                            <div class="meta-top d-flex">
-                                <a href="#">Туры и путешествия</a>
-                            </div>
-                            <a class="d-block" href="single-blog.html">
-                                <h4>Сильно поздно
-                                    появляются четвертые нас.</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3">
-                    <div class="single-blog style_five">
-                        <div class="thumb">
-                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/7.jpg"
-                                alt="" data-pagespeed-url-hash="1528170223">
-                        </div>
-                        <div class="short_details ">
-                            <div class="meta-top d-flex">
-                                <a href="#">Туры и путешествия</a>
-                            </div>
-                            <a class="d-block" href="single-blog.html">
-                                <h4>Сильно поздно
-                                    появляются четвертые нас.</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <?php include "NewsBlog/travel_news.php" ?>
     <!--================ First block section end =================-->
     <!--================ Editors Picks section start =================-->
     <section class="editors_pick area-padding">
         <div class="container">
             <div class="row">
                 <div class="area-heading">
-                    <h3>Выбор редактора</h3>
-                    <p>Обильно подкрадывающийся дух может явиться четвертым нам.</p>
+                    <h3>Editor Picks</h3>
+                    <p>Abundantly creeping saw forth spirit can made appear fourth us.</p>
                 </div>
             </div>
             <div class="row">
-                <?php
-                    $news_data = DB::Query("SELECT * FROM `blog` WHERE `id`='1'");
-                    $news = DB::Assoc($news_data);
-                    $categories = DB::Query("SELECT * FROM `category` WHERE `id`='$news[category_id]'");
-                    $category = DB::Assoc($categories);
-                        $large_card2 = new LargeCard;
-                        $large_card2->SetData('img/news/'.$news['img'], $news['title'], $category['name'],$news['date'],$news['author']);
-                        echo $large_card2->GetData();
-
-                                      
-                
-                ?>
+                <div class="col-lg-5 col-xl-6">
+                    <div class="single-blog">
+                        <div class="thumb">
+                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/8.jpg"
+                                alt="" data-pagespeed-url-hash="1822670144"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </div>
+                        <div class="short_details pad_25 ">
+                            <div class="meta-top d-flex">
+                                <a href="#">Tours &amp; Travel</a>
+                            </div>
+                            <a class="d-block" href="single-blog.html">
+                                <h4>Created face stars sixth forth
+                                    Earth firmament</h4>
+                            </a>
+                            <div class="meta-bottom d-flex">
+                                <a href="#">March 12 , 2019 . </a>
+                                <a class="dark_font" href="#">By Alen Mark</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg-7 col-xl-6">
                     <div class="single-blog row no-gutters style-four m_b_30">
                         <div class="col-12 col-sm-7">
                             <div class="short_details padd_left_0">
                                 <div class="meta-top d-flex">
-                                    <a href="#">Туры и путешествия</a>
+                                    <a href="#">Tours &amp; Travel</a>
                                 </div>
                                 <a class="d-block" href="single-blog.html">
-                                    <h4 class="font-20">Свет, у которого есть сам бог
-                                        трава трава темное море на
-                                        хас доу</h4>
+                                    <h4 class="font-20">Light that hath itself god
+                                        grass herb dark sea on
+                                        the hath dowe </h4>
                                 </a>
-                                <p>Сказал духовный вечер над хорошими парнями у бога посреди глубины, в которой он
-                                    создал моря
-                                    кобель очень грустный и говорит правильно.</p>
+                                <p>Said spirit evening above good twes at god midst deep a wherein very made he seas
+                                    male very broug sad forth saying right.</p>
                             </div>
                         </div>
                         <div class="col-12 col-sm-5">
                             <div class="thumb">
                                 <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/9.jpg"
-                                    alt="" data-pagespeed-url-hash="2117170065">
+                                    alt="" data-pagespeed-url-hash="2117170065"
+                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                             </div>
                         </div>
                     </div>
@@ -147,22 +88,22 @@
                         <div class="col-12 col-sm-5">
                             <div class="thumb">
                                 <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/10.jpg"
-                                    alt="" data-pagespeed-url-hash="3527112373">
+                                    alt="" data-pagespeed-url-hash="3527112373"
+                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                             </div>
                         </div>
                         <div class="col-12 col-sm-7">
                             <div class="short_details padd_right_0">
                                 <div class="meta-top d-flex">
-                                    <a href="#">Туры и путешествия</a>
+                                    <a href="#">Tours &amp; Travel</a>
                                 </div>
                                 <a class="d-block" href="single-blog.html">
-                                    <h4 class="font-20">Свет, у которого есть сам бог
-                                        трава трава темное море на
-                                        хас доу</h4>
+                                    <h4 class="font-20">Light that hath itself god
+                                        grass herb dark sea on
+                                        the hath dowe </h4>
                                 </a>
-                                <p> Сказал духовный вечер над хорошими парнями у бога посреди глубины, в которой он
-                                    создал моря
-                                    кобель очень грустный и говорит правильно.</p>
+                                <p>Said spirit evening above good twes at god midst deep a wherein very made he seas
+                                    male very broug sad forth saying right.</p>
                             </div>
                         </div>
                     </div>
@@ -172,7 +113,8 @@
                 <div class="col-12">
                     <div class="addvertise">
                         <a href=""><img src="https://preview.colorlib.com/theme/eden/img/banner/add.jpg" alt=""
-                                data-pagespeed-url-hash="2179791821"></a>
+                                data-pagespeed-url-hash="2179791821"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
                     </div>
                 </div>
             </div>
@@ -180,123 +122,7 @@
     </section>
     <!--================ Editors Picks section end =================-->
     <!--================ Video section start =================-->
-    <div class="video-area background_one area-padding">
-        <div class="container">
-            <div class="row">
-                <div class="area-heading">
-                    <h3>Новости путешествий</h3>
-                    <p>Обильно подкрадывающийся дух может явиться четвертым нам.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="single-blog video-style">
-                        <div class="thumb">
-                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/11.jpg"
-                                alt="" data-pagespeed-url-hash="3821612294">
-                            <div class="play_btn">
-                                <a class="play-video" href="https://www.youtube.com/watch?v=MrRvX5I8PyY"
-                                    data-animate="zoomIn" data-duration="1.5s" data-delay="0.1s"><span
-                                        class="ti-control-play"></span></a>
-                            </div>
-                        </div>
-                        <div class="short_details">
-                            <div class="meta-top d-flex">
-                                <a href="#">туфли</a>/
-                                <a href="#">15 марта 2019 г.,</a>
-                            </div>
-                            <a class="d-block" href="single-blog.html">
-                                <h4>Создано лицо звезд шестой четвертой
-                                    Земляной небосвод</h4>
-                            </a>
-                            <div class="meta-bottom d-flex">
-                                <a href="#"><i class="ti-comment"></i>05 comment</a>
-                                <a href="#"><i class="ti-heart"></i> 0 like</a>
-                                <a href="#"><i class="ti-eye"></i> 1k view</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="single-blog video-style small row m_b_30">
-                        <div class="thumb col-12 col-sm-5">
-                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/12.jpg"
-                                alt="" data-pagespeed-url-hash="4116112215">
-                            <div class="play_btn">
-                                <a class="play-video" href="https://www.youtube.com/watch?v=MrRvX5I8PyY"
-                                    data-animate="zoomIn" data-duration="1.5s" data-delay="0.1s"><span
-                                        class="ti-control-play"></span></a>
-                            </div>
-                        </div>
-                        <div class="short_details col-12 col-sm-7">
-                            <div class="meta-top d-flex">
-                                <a href="#">Beauty</a>
-                            </div>
-                            <a class="d-block" href="single-blog.html">
-                                <h4>Blessed night morning on
-                                    them you great</h4>
-                            </a>
-                            <div class="meta-bottom d-flex">
-                                <a href="#"><i class="ti-time"></i>mar 12</a>
-                                <a href="#"><i class="ti-heart"></i> 0 like</a>
-                                <a href="#"><i class="ti-eye"></i> 1k view</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-blog video-style small row m_b_30 ">
-                        <div class="thumb col-12 col-sm-5">
-                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/13.jpg"
-                                alt="" data-pagespeed-url-hash="115644840">
-                            <div class="play_btn">
-                                <a class="play-video" href="https://www.youtube.com/watch?v=MrRvX5I8PyY"
-                                    data-animate="zoomIn" data-duration="1.5s" data-delay="0.1s"><span
-                                        class="ti-control-play"></span></a>
-                            </div>
-                        </div>
-                        <div class="short_details col-12 col-sm-7">
-                            <div class="meta-top d-flex">
-                                <a href="#">Beauty</a>
-                            </div>
-                            <a class="d-block" href="single-blog.html">
-                                <h4>Blessed night morning on
-                                    them you great</h4>
-                            </a>
-                            <div class="meta-bottom d-flex">
-                                <a href="#"><i class="ti-time"></i>mar 12</a>
-                                <a href="#"><i class="ti-heart"></i> 0 like</a>
-                                <a href="#"><i class="ti-eye"></i> 1k view</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-blog video-style small row">
-                        <div class="thumb col-12 col-sm-5">
-                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/14.jpg"
-                                alt="" data-pagespeed-url-hash="410144761">
-                            <div class="play_btn">
-                                <a class="play-video" href="https://www.youtube.com/watch?v=MrRvX5I8PyY"
-                                    data-animate="zoomIn" data-duration="1.5s" data-delay="0.1s"><span
-                                        class="ti-control-play"></span></a>
-                            </div>
-                        </div>
-                        <div class="short_details col-12 col-sm-7">
-                            <div class="meta-top d-flex">
-                                <a href="#">Beauty</a>
-                            </div>
-                            <a class="d-block" href="single-blog.html">
-                                <h4>Blessed night morning on
-                                    them you great</h4>
-                            </a>
-                            <div class="meta-bottom d-flex">
-                                <a href="#"><i class="ti-time"></i>mar 12</a>
-                                <a href="#"><i class="ti-heart"></i> 0 like</a>
-                                <a href="#"><i class="ti-eye"></i> 1k view</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php include "NewsBlog/video.php" ?>
     <!--================ Video section end =================-->
     <!--================ three-block section start =================-->
     <div class="three-block  area-padding">
@@ -304,29 +130,77 @@
             <div class="row">
                 <div class="area-heading">
                     <h3>Fashion News</h3>
-                    <p>Обильно подкрадывающийся дух может явиться четвертым нам.</p>
+                    <p>Abundantly creeping saw forth spirit can made appear fourth us.</p>
                 </div>
             </div>
-
-
             <div class="row">
-
-                <?php
-
-                    $news_data = DB::Query("SELECT * FROM `blog` LIMIT 3, 6");
-                    while($news = DB::Assoc($news_data)) {
-                        $categories = DB::Query("SELECT * FROM `category` WHERE `id`='$news[category_id]'");
-                        $category = DB::Assoc($categories);
-                        $card = new MediumCard;
-                        $card->SetData('img/news/'.$news['img'], $news['title'], $category['name'],$news['date']);
-                        echo $card->GetData();
-
-                    }
-                    
-                ?>
+                <div class="col-lg-4">
+                    <div class="single-blog style-five">
+                        <div class="thumb">
+                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/15.jpg" alt="" data-pagespeed-url-hash="704644682"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </div>
+                        <div class="short_details">
+                            <div class="meta-top d-flex">
+                                <a href="#">shoes</a>/
+                                <a href="#">March 15, 2019</a>
+                            </div>
+                            <a class="d-block" href="single-blog.html">
+                                <h4>Shall for rule whose toge one
+                                    may heaven to dat</h4>
+                            </a>
+                            <div class="meta-bottom d-flex">
+                                <a href="#"><i class="ti-comment"></i>05 comment</a>
+                                <a href="#"><i class="ti-heart"></i> 0 like</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-blog style-five">
+                        <div class="thumb">
+                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/16.jpg" alt="" data-pagespeed-url-hash="999144603"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </div>
+                        <div class="short_details">
+                            <div class="meta-top d-flex">
+                                <a href="#">shoes</a>/
+                                <a href="#">March 15, 2019</a>
+                            </div>
+                            <a class="d-block" href="single-blog.html">
+                                <h4>Shall for rule whose toge one
+                                    may heaven to dat</h4>
+                            </a>
+                            <div class="meta-bottom d-flex">
+                                <a href="#"><i class="ti-comment"></i>05 comment</a>
+                                <a href="#"><i class="ti-heart"></i> 0 like</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-blog style-five">
+                        <div class="thumb">
+                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/17.jpg" alt="" data-pagespeed-url-hash="1293644524"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </div>
+                        <div class="short_details">
+                            <div class="meta-top d-flex">
+                                <a href="#">shoes</a>/
+                                <a href="#">March 15, 2019</a>
+                            </div>
+                            <a class="d-block" href="single-blog.html">
+                                <h4>Shall for rule whose toge one
+                                    may heaven to dat</h4>
+                            </a>
+                            <div class="meta-bottom d-flex">
+                                <a href="#"><i class="ti-comment"></i>05 comment</a>
+                                <a href="#"><i class="ti-heart"></i> 0 like</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
         </div>
     </div>
     <!--================ three-block section end =================-->
@@ -379,7 +253,7 @@
    $n3 = new News;
    $news_third = $n3->main(5,0,1);  // all data news
 ?>
-                         <div class="col-lg-12 col-xl-3">
+                        <div class="col-lg-12 col-xl-3">
                             <div class="row">
                                 <div class="col-12 col-md-6 col-lg-6 col-xl-12">
                                     <div class="single-blog style-three m_b_30">
@@ -420,60 +294,60 @@
                     </div>
 
 
-                        <?php
+                    <?php
    $n4 = new News;
    $news_sport_1 = $n3->main(2,0,1);  // all data news
 
    $n5 = new News;
    $news_sport_2 = $n4->main(11,0,1);  // all data news
 ?>
-                        <div class="col-lg-12 col-xl-3">
-                            <div class="row">
-                                <div class="col-12 col-md-6 col-lg-6 col-xl-12">
-                                    <div class="single-blog style-three m_b_30">
-                                        <div class="thumb">
-                                            <img class="img-fluid" src="/img/news/<?=$news_sport_1['img']?>" alt=""
-                                                data-pagespeed-url-hash="350170539">
+                    <div class="col-lg-12 col-xl-3">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-12">
+                                <div class="single-blog style-three m_b_30">
+                                    <div class="thumb">
+                                        <img class="img-fluid" src="/img/news/<?=$news_sport_1['img']?>" alt=""
+                                            data-pagespeed-url-hash="350170539">
+                                    </div>
+                                    <div class="short_details">
+                                        <div class="meta-top d-flex justify-content-center">
+                                            <a href="#"><?=$n4->get_category()?></a>
                                         </div>
-                                        <div class="short_details">
-                                            <div class="meta-top d-flex justify-content-center">
-                                                <a href="#"><?=$n4->get_category()?></a>
-                                            </div>
-                                            <a class="d-block" href="single-blog.html">
-                                                <h4><?=$news_sport_1['title']?></h4>
-                                            </a>
-                                        </div>
+                                        <a class="d-block" href="single-blog.html">
+                                            <h4><?=$news_sport_1['title']?></h4>
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-6 col-lg-6 col-xl-12">
-                                    <div class="single-blog style-three m_b_30">
-                                        <div class="thumb">
-                                            <img class="img-fluid" src="/img/news/<?=$news_sport_2['img']?>" alt=""
-                                                data-pagespeed-url-hash="350170539">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-12">
+                                <div class="single-blog style-three m_b_30">
+                                    <div class="thumb">
+                                        <img class="img-fluid" src="/img/news/<?=$news_sport_2['img']?>" alt=""
+                                            data-pagespeed-url-hash="350170539">
+                                    </div>
+                                    <div class="short_details">
+                                        <div class="meta-top d-flex justify-content-center">
+                                            <a href="#"><?=$n5->get_category()?></a>
                                         </div>
-                                        <div class="short_details">
-                                            <div class="meta-top d-flex justify-content-center">
-                                                <a href="#"><?=$n5->get_category()?></a>
-                                            </div>
-                                            <a class="d-block" href="single-blog.html">
-                                                <h4><?=$news_sport_2['title']?></h4>
-                                            </a>
-                                        </div>
+                                        <a class="d-block" href="single-blog.html">
+                                            <h4><?=$news_sport_2['title']?></h4>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
 
 
-
-
-
                 </div>
+
+
+
+
+
             </div>
         </div>
+    </div>
     </div>
     </div>
     <!--================ Latest news section end =================-->
