@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: localhost:3306
--- Время создания: Ноя 10 2020 г., 11:13
+-- Время создания: Ноя 11 2020 г., 10:23
 -- Версия сервера: 5.7.26
 -- Версия PHP: 7.4.2
 
@@ -48,6 +48,153 @@ INSERT INTO `blog` (`id`, `title`, `desk`, `img`, `author`, `date`, `is_public`,
 (13, 'Представлена концепция развития туризма на Кольсайских озерах', 'Капитального строительства не будет.\r\nВ национальном парке \"Кольсайские озера\" презентовали концепцию развития экотуризма. Здесь планируют построить три современных визит-центра, кемпинги, этно-деревни и караван-сараи, передает Today.kz со ссылкой на Минэкологии. \r\n\"По предварительным оценкам, количество туристических маршрутов увеличится, будут созданы новые рабочие места для местных жителей, расширится гостиничный фонд, появятся места для палаток и лагерей. При этом доход увеличится до 150 миллионов тенге в год\", - отметил Турганбаев.\r\n\r\nВ 2019 году нацпарк посетили 87 тысяч туристов, которые принесли доход в размере около 30 млн тенге. \r\n\r\nПланируется также создание Общественного совета по развитию экотуризма в национальном парке \"Кольсайские озера\". \r\n\r\n\"Мы внесем Концепцию развития на рассмотрение Общественного совета, который будет создан при нацпарке. После тщательного изучения и обсуждения на Совете мы продолжим действовать в соответствии с законом. Объекты будут созданы в рамках крупного инвестиционного проекта. Мы разрабатываем концепцию, чтобы представители бизнеса в полной мере понимали наши требования, когда завтра придут с инвестиционным проектом. Предприниматели, участвующие в конкурсе, смогут работать здесь только в том случае, если их идеи будут соответствовать нашей концепции\", - заключил вице-министр экологии, геологии и природных ресурсов РК Ерлан Нысанбаев.\r\nОсобое внимание уделят развитию туристических маршрутов и троп. Капитального строительства не будет. Используются легкие конструкции.\r\n\r\nДиректор ГНПП \"Кольсайские озера\" Данияр Турганбаев отметил, что инфраструктура для экотуризма в нацпарке будет отдалена от основных озер, чтобы не нанести вред окружающей среде.', 'img22.jpg', 'Анна Лебедева', '2020-11-09', 1, 11, '18,19,22', 'https://www.youtube.com/watch?v=g8kPDqzEtyg', 'img22.jpg'),
 (14, 'Власти Мальдив ужесточили правила въезда в страну для туристов', 'От требования сдавать анализ на коронавирус перед прибытием освобождены только дети в возрасте до года.\r\nВласти Мальдив ужесточили правила въезда для туристов, теперь гости обязаны не более чем за сутки загрузить на правительственный портал результат своего ПЦР-теста на коронавирус, передает Today.kz со ссылкой на РИА Новости.\r\n\r\nКак сообщила миграционная служба республики, планирующим путешествие необходимо не более чем за 24 часа до прибытия в страну загрузить результаты ПЦР-тестов на коронавирус на правительственный портал. Сам тест должен быть сделан не позднее, чем за 72 часа до вылета на Мальдивы.\r\n\r\nВ сертификате с результатом теста должны быть указаны название и адрес лаборатории, дата тестирования и непосредственно сам результат. От требований сдавать анализ перед прибытием освобождены дети в возрасте до года.', 'img23.jpg', 'Тихомирова Анна', '2020-11-08', 1, 11, '18,19,22', 'https://www.youtube.com/watch?v=7UNIwBtYEDE', 'img23.jpg');
 
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `category`
+--
+
+CREATE TABLE `category` (
+  `id` int(11) NOT NULL,
+  `name` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `category`
+--
+
+INSERT INTO `category` (`id`, `name`) VALUES
+(1, 'Политика'),
+(2, 'Спорт'),
+(3, 'Интернет'),
+(4, 'Наука и технологии'),
+(5, 'Общество'),
+(6, 'Преступность и право'),
+(7, 'Религия'),
+(8, 'Дни рождения‎'),
+(9, 'Экономика‎'),
+(10, 'Здоровье'),
+(11, 'Туризм и путешествие'),
+(12, 'Кино'),
+(13, 'Музыка');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `comment`
+--
+
+CREATE TABLE `comment` (
+  `id` int(11) NOT NULL,
+  `email` varchar(32) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `rating` int(11) NOT NULL,
+  `comment` text NOT NULL,
+  `news_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `contact`
+--
+
+CREATE TABLE `contact` (
+  `id` int(11) NOT NULL,
+  `message` text NOT NULL,
+  `name` text NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `tema` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `contact`
+--
+
+INSERT INTO `contact` (`id`, `message`, `name`, `email`, `tema`) VALUES
+(1, 'jyt u6r yfyffuyf yufyuf uyffuy', 'Mekemtas Daulet Askaruli', 'dmekemtas@mail.ru', '3rfrfrfrf3jytjyt utuyuyutufyuyf'),
+(2, 'vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv', 'Mekemtas Daulet Askaruli', 'dmekemtas@mail.ru', 'vvvvvvvvvvv'),
+(3, 'vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv', 'Mekemtas Daulet Askaruli', 'dmekemtas@mail.ru', 'vvvvvvvvvvv'),
+(4, 'sssssssssssssssssssssssssssssssssssssssss', 'Mekemtas Daulet Askaruli', 'dmekemtas@mail.ru', '3rfrfrfrf3');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `like`
+--
+
+CREATE TABLE `like` (
+  `id` int(11) NOT NULL,
+  `news_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `tag`
+--
+
+CREATE TABLE `tag` (
+  `id` int(11) NOT NULL,
+  `name` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `tag`
+--
+
+INSERT INTO `tag` (`id`, `name`) VALUES
+(1, 'Тенге'),
+(2, 'Спорт'),
+(3, 'Хоккей'),
+(4, 'Футбол'),
+(5, 'Марс'),
+(6, 'Машина'),
+(7, 'Компьютер'),
+(8, 'Илон Маск'),
+(9, 'Президент'),
+(10, 'Самоубийство'),
+(11, 'Грипп'),
+(12, 'Голливуд'),
+(13, 'Ракета'),
+(14, 'Космос'),
+(15, 'Facebook'),
+(16, 'Twitter'),
+(17, 'Вирус'),
+(18, 'Европа'),
+(19, 'Дубаи'),
+(20, 'Кинофестиваль'),
+(21, 'УЕФА'),
+(22, 'Нью-Йорк'),
+(23, 'Кино'),
+(24, 'Музыка'),
+(25, 'Актер'),
+(26, 'Звезда'),
+(27, 'Лайфхак'),
+(28, 'Комик');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `email` varchar(35) NOT NULL,
+  `password` varchar(32) NOT NULL,
+  `status` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `user`
+--
+
+INSERT INTO `user` (`id`, `email`, `password`, `status`) VALUES
+(1, 'admin@gmail.com', '123', 1);
+
 --
 -- Индексы сохранённых таблиц
 --
@@ -59,6 +206,42 @@ ALTER TABLE `blog`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `category`
+--
+ALTER TABLE `category`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `comment`
+--
+ALTER TABLE `comment`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `like`
+--
+ALTER TABLE `like`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `tag`
+--
+ALTER TABLE `tag`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT для сохранённых таблиц
 --
 
@@ -67,3 +250,39 @@ ALTER TABLE `blog`
 --
 ALTER TABLE `blog`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
+-- AUTO_INCREMENT для таблицы `category`
+--
+ALTER TABLE `category`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT для таблицы `comment`
+--
+ALTER TABLE `comment`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT для таблицы `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT для таблицы `like`
+--
+ALTER TABLE `like`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT для таблицы `tag`
+--
+ALTER TABLE `tag`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+
+--
+-- AUTO_INCREMENT для таблицы `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;

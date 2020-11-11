@@ -11,7 +11,7 @@
             $this->category = $category;
             return $array_news;
         }
-        public function While($category,$start,$end)
+        public function Whiles($category,$start,$end)
         {
            $news = DB::Query("SELECT * FROM `blog` WHERE `category_id`='$category' LIMIT $start,$end");
             $this->category = $category;

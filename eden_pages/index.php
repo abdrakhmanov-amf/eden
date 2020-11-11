@@ -6,26 +6,26 @@
 
 <?php
     
-    include "../includes/head.php";
+    include $_SERVER['DOCUMENT_ROOT']."/includes/head.php";
     
 ?>
 
 <body>
     <!--================ Start header Top Area =================-->
-    <?php include "../includes/header-top.php"; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/includes/header-top.php"; ?>
     <!--================ End header top Area =================-->
     <!-- Start header Menu Area -->
-    <?php include "../includes/header.php"; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/includes/header.php"; ?>
     <!-- End header MEnu Area -->
     <!--================Fullwidth block Area =================-->
     <section class="fullwidth-block area-padding-bottom">
         <div class="container-fluid">
-            <?php include "NewsBlog/Main.php" ?>
+            <?php include $_SERVER['DOCUMENT_ROOT']."/eden_pages/NewsBlog/Main.php" ?>
         </div>
     </section>
     <!--================Fullwidth block Area end =================-->
     <!--================ First block section start =================-->
-        <?php include "NewsBlog/travel_news.php" ?>
+        <?php include $_SERVER['DOCUMENT_ROOT']."/eden_pages/NewsBlog/travel_news.php" ?>
     <!--================ First block section end =================-->
     <!--================ Editors Picks section start =================-->
     <section class="editors_pick area-padding">
@@ -121,7 +121,7 @@
     </section>
     <!--================ Editors Picks section end =================-->
     <!--================ Video section start =================-->
-    <?php include "NewsBlog/video.php" ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/eden_pages/NewsBlog/video.php" ?>
     <!--================ Video section end =================-->
     <!--================ three-block section start =================-->
     <div class="three-block  area-padding">
@@ -214,7 +214,7 @@
             </div>
             <div class="row">
                 <?php
-                       include "../core/fashion_news.php";
+                       include $_SERVER['DOCUMENT_ROOT']."/core/fashion_news.php";
 
                        $n1 = new News;
                        $news_first = $n1->main(12,0,1);  // all data news
@@ -387,12 +387,12 @@
     </section>
     <!-- ================ Instargram Area End ================= -->
     <!-- ================ start footer Area ================= -->
-    <?php include "../includes/footer.php"; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/includes/footer.php"; ?>
     <!-- ================ End footer Area ================= -->
     <!-- ================ End footer Area ================= -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <?php include "../includes/js.php"; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/includes/js.php"; ?>
 </body>
 
 </html>

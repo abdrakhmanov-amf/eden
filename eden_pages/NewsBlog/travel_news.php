@@ -1,10 +1,7 @@
 <section class="first_block">
         <div class="container">
             <div class="row">
-    <?php
-                
-        include "../../core/news.php";
-
+    <?php       
         $travel_n1 = new News;
         $t_news1 = $travel_n1->main(11,0,1);
     ?>            
