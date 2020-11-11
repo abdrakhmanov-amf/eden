@@ -32,30 +32,7 @@
     <section class="category-page area-padding">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="single-category">
-                        <div class="thumb">
-                            <img class="img-fluid"
-                                src="https://preview.colorlib.com/theme/eden/img/category/x1.jpg.pagespeed.ic.Y-8yBsMSbx.webp"
-                                alt="" data-pagespeed-url-hash="2894990395"
-                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                        </div>
-                        <div class="short_details">
-                            <div class="meta-top d-flex">
-                                <a href="#">туфли</a>/
-                                <a href="#">15 марта 2019 г.,</a>
-                            </div>
-                            <a class="d-block" href="single-blog.html">
-                                <h4>Должен за правило, чей тоге один
-                                    да здравствует небо</h4>
-                            </a>
-                            <div class="meta-bottom d-flex">
-                                <a href="#"><i class="ti-comment"></i>05 комментарий</a>
-                                <a href="#"><i class="ti-heart"></i>0 нравится</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               <?php include "../query/blog.php"; ?>
 
                 <div class="col-12 text-center">
                     <a href="" class="main_btn">Загрузи больше<span class="ti-angle-double-right"></span></a>
