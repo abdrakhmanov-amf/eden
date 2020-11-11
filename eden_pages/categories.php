@@ -21,7 +21,7 @@
                     </div>
                     <div class="page_link">
                         <a href="index.html">Домашняя</a>
-                        <a href="contact.html">Категория</a>
+                        <a href="/blogs">Категория</a>
                     </div>
                 </div>
             </div>
