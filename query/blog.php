@@ -4,12 +4,12 @@
    $categories  =  DB::Query( "SELECT * FROM `category`");
 
     while($category = DB::Assoc($categories)){
-        $products   = DB::Query($c , "SELECT * FROM ORDER BY `blog` `date` DESC WHERE `category_id`='$category[id]'");
+        $blogs   = DB::Query($c , "SELECT * FROM  `blog`  WHERE `category_id`='$category[id]'");
 
-        $product = "";
-        while ($p =DB::Assoc($products)) {
+        $blog = "";
+        while ($p =DB::Assoc($blogs)) {
             
-            $product .= "
+            $blog .= "
                 <div class='col-sm-6'>
                     <div class='menu-item menu-item-one clearfix'>
                         
@@ -25,10 +25,10 @@
                 </div>";
         }
         
-        if($product!='') {
+        if($blog!='') {
 
         
-        echo "$product[title]";
+        echo "$blog[title]";
         echo "
         <div class='container ptb'>
             <div class='row'>
@@ -42,7 +42,7 @@
             </div>
             <div class='row'>
         
-            $product
+            $blog
            
         
             </div>
