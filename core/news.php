@@ -11,6 +11,12 @@
             $this->category = $category;
             return $array_news;
         }
+        public function While($category,$start,$end)
+        {
+           $news = DB::Query("SELECT * FROM `blog` WHERE `category_id`='$category' LIMIT $start,$end");
+            $this->category = $category;
+            return $news;
+        }
 
         public function get_category(){
         $name_category =  DB::Query("SELECT `name` FROM `category` WHERE `id`='$this->category'");
@@ -19,6 +25,8 @@
         }
 
     }
+
+
 
 //    $n1 = new News;
 //    $news_first = $n1->main(12,0,1);  // all data news

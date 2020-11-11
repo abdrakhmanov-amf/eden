@@ -1,6 +1,5 @@
 <?php
     
-    include "../core/cards.php";
 ?>
 <!doctype html>
 <html lang="en">
