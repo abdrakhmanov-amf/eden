@@ -216,7 +216,7 @@
 <div class="col-lg-6">
 <div class="single-blog style-five">
 <div class="thumb">
-<img class="img-fluid" src="img/magazine/x18.jpg.pagespeed.ic.qa2Fr5AB3t.webp" alt="" data-pagespeed-url-hash="1588144445" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+<img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/x18.jpg.pagespeed.ic.qa2Fr5AB3t.webp" alt="" data-pagespeed-url-hash="1588144445" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 </div>
 <div class="short_details">
 <div class="meta-top d-flex">
@@ -239,7 +239,7 @@ from whose signs over</h4>
 <div class="col-lg-6">
 <div class="single-blog style-five small">
 <div class="thumb">
-<img class="img-fluid" src="img/magazine/x19.jpg.pagespeed.ic.KqmgX_vd7R.webp" alt="" data-pagespeed-url-hash="1882644366" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+<img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/x19.jpg.pagespeed.ic.KqmgX_vd7R.webp" alt="" data-pagespeed-url-hash="1882644366" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 </div>
 <div class="short_details">
 <div class="meta-top d-flex">
@@ -259,7 +259,7 @@ may heaven to</h4>
 <div class="col-lg-6">
 <div class="single-blog style-five small">
 <div class="thumb">
-<img class="img-fluid" src="img/magazine/x20.jpg.pagespeed.ic.J9mYg8WMqQ.webp" alt="" data-pagespeed-url-hash="3451896360" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+<img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/x20.jpg.pagespeed.ic.J9mYg8WMqQ.webp" alt="" data-pagespeed-url-hash="3451896360" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 </div>
 <div class="short_details">
 <div class="meta-top d-flex">
@@ -279,7 +279,7 @@ may heaven to</h4>
 <div class="col-lg-6">
 <div class="single-blog style-five small">
 <div class="thumb">
-<img class="img-fluid" src="img/magazine/x21.jpg.pagespeed.ic.WyVqQeP8d-.webp" alt="" data-pagespeed-url-hash="3746396281" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+<img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/x21.jpg.pagespeed.ic.WyVqQeP8d-.webp" alt="" data-pagespeed-url-hash="3746396281" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 </div>
 <div class="short_details">
 <div class="meta-top d-flex">
@@ -299,7 +299,7 @@ may heaven to</h4>
 <div class="col-lg-6">
 <div class="single-blog style-five small">
 <div class="thumb">
-<img class="img-fluid" src="img/magazine/x22.jpg.pagespeed.ic.Pl_jvmNF5_.webp" alt="" data-pagespeed-url-hash="4040896202" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+<img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/x22.jpg.pagespeed.ic.Pl_jvmNF5_.webp" alt="" data-pagespeed-url-hash="4040896202" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 </div>
 <div class="short_details">
 <div class="meta-top d-flex">
