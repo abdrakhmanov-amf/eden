@@ -9,7 +9,7 @@
             <div class="row">
 
         <?php
-            include "../../core/news.php";
+           
 
             $video1 = new News;
             $video_news1 = $video1->main(11,0,1);
