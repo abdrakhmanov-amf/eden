@@ -14,7 +14,7 @@
                         <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
                             <li class="nav-item active"><a class="nav-link" href="/">Домашняя</a></li>
                             <li class="nav-item"><a class="nav-link" href="/categories">Категории</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/archive">Архив</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/search">Поиск</a></li>
                             <li class="nav-item submenu dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
                                     aria-haspopup="true" aria-expanded="false">Блог</a>
