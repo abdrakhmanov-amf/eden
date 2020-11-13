@@ -340,10 +340,6 @@
 
                 </div>
 
-
-
-
-
             </div>
         </div>
     </div>
@@ -354,7 +350,7 @@
     <section class="instagram">
         <div class="row no-gutters">
             <div class="col-2">
-                <a href=""><img
+                <a href="tel:87477434999"><img
                         src="https://preview.colorlib.com/theme/eden/img/instagram/x1.jpg.pagespeed.ic.3_eOt8F4XH.webp"
                         alt="" data-pagespeed-url-hash="270620287"></a>
             </div>
