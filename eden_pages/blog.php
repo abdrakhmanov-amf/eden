@@ -16,7 +16,7 @@
             <div class="container">
                 <div class="banner_content d-md-flex justify-content-between align-items-center">
                     <div class="mb-3 mb-md-0">
-                        <h2>Blog</h2>
+                        <h2>Блог</h2>
                     </div>
                     <div class="page_link">
                         <a href="index.html">Домашняя</a>

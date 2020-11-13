@@ -2,6 +2,8 @@
 <html lang="en">
 
 <?php include "../includes/head.php"; ?>
+<?php include "../core/DB.php"; ?>
+
 
 <body>
     <!--================ Start header Top Area =================-->
@@ -16,11 +18,11 @@
             <div class="container">
                 <div class="banner_content d-md-flex justify-content-between align-items-center">
                     <div class="mb-3 mb-md-0">
-                        <h2>Blog Details</h2>
+                        <h2>Подробности блога</h2>
                     </div>
                     <div class="page_link">
-                        <a href="index.html">Home</a>
-                        <a href="contact.html">Blog Details</a>
+                        <a href="index.html">Домашняя</a>
+                        <a href="contact.html">Подробности блога</a>
                     </div>
                 </div>
             </div>
@@ -32,66 +34,52 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 posts-list">
-                    <div class="single-post">
-                        <div class="feature-img">
-                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/blog/main-blog/xm-blog-1.jpg.pagespeed.ic.Vb11bfvxZv.webp"
-                                alt="" data-pagespeed-url-hash="1112797043"
-                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                <?php
+
+                
+                
+
+                if($_GET['id']){
+
+                $query = DB::Query("SELECT * FROM `blog` WHERE `id`='$_GET[id]'");
+                $fetch = DB::Assoc($query);
+                $category = DB::Assoc(DB::Query("SELECT * FROM `category` WHERE `id`='$fetch[category_id]'"));
+
+                    echo "<div class='single-post'>
+                        <div class='feature-img'>
+                            <img class='img-fluid' src='/img/news/$fetch[img]'
+                                alt='' data-pagespeed-url-hash='1112797043'
+                                onload='pagespeed.CriticalImages.checkImageForCriticality(this);'>
                         </div>
-                        <div class="blog_details">
-                            <h2>Second divided from form fish beast made every of seas
-                                all gathered us saying he our</h2>
-                            <ul class="blog-info-link mt-3 mb-4">
-                                <li><a href="#"><i class="far fa-user"></i> Travel, Lifestyle</a></li>
-                                <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
+                        <div class='blog_details'>
+                            <h2>$fetch[title]</h2>
+                            <ul class='blog-info-link mt-3 mb-4'>
+                                <li><a href='#'><i class='far fa-user'></i>$category[name]</a></li>
+                                <li><a href='#'><i class='far fa-comments'></i>03 Комментарии</a></li>
                             </ul>
-                            <p class="excert">
-                                MCSE boot camps have its supporters and its detractors. Some people do not understand
-                                why you should have to spend money on boot camp when you can get the MCSE study
-                                materials yourself at a fraction of the camp price. However, who has the willpower
+                            <p class='excert'>
+                                $fetch[desk]
                             </p>
-                            <p>
-                                MCSE boot camps have its supporters and its detractors. Some people do not understand
-                                why you should have to spend money on boot camp when you can get the MCSE study
-                                materials yourself at a fraction of the camp price. However, who has the willpower to
-                                actually sit through a self-imposed MCSE training. who has the willpower to actually
-                            </p>
-                            <div class="quote-wrapper">
-                                <div class="quotes">
-                                    MCSE boot camps have its supporters and its detractors. Some people do not
-                                    understand why you should have to spend money on boot camp when you can get the MCSE
-                                    study materials yourself at a fraction of the camp price. However, who has the
-                                    willpower to actually sit through a self-imposed MCSE training.
-                                </div>
-                            </div>
-                            <p>
-                                MCSE boot camps have its supporters and its detractors. Some people do not understand
-                                why you should have to spend money on boot camp when you can get the MCSE study
-                                materials yourself at a fraction of the camp price. However, who has the willpower
-                            </p>
-                            <p>
-                                MCSE boot camps have its supporters and its detractors. Some people do not understand
-                                why you should have to spend money on boot camp when you can get the MCSE study
-                                materials yourself at a fraction of the camp price. However, who has the willpower to
-                                actually sit through a self-imposed MCSE training. who has the willpower to actually
-                            </p>
+                           
                         </div>
                     </div>
-                    <div class="navigation-top">
-                        <div class="d-sm-flex justify-content-between text-center">
-                            <p class="like-info"><span class="align-middle"><i class="far fa-heart"></i></span> Lily and
-                                4 people like this</p>
-                            <div class="col-sm-4 text-center my-2 my-sm-0">
-                                <p class="comment-count"><span class="align-middle"><i
-                                            class="far fa-comment"></i></span> 06 Comments</p>
+                    <div class='navigation-top'>
+                        <div class='d-sm-flex justify-content-between text-center'>
+                            <p class='like-info'><span class='align-middle'><i class='far fa-heart'></i></span> Лили и
+                                4 людям это нравится</p>
+                            <div class='col-sm-4 text-center my-2 my-sm-0'>
+                                <p class='comment-count'><span class='align-middle'><i
+                                            class='far fa-comment'></i></span>06 Комментарии</p>
                             </div>
-                            <ul class="social-icons">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                            <ul class='social-icons'>
+                                <li><a href='#'><i class='fab fa-facebook-f'></i></a></li>
+                                <li><a href='#'><i class='fab fa-twitter'></i></a></li>
+                                <li><a href='#'><i class='fab fa-dribbble'></i></a></li>
+                                <li><a href='#'><i class='fab fa-behance'></i></a></li>
                             </ul>
-                        </div>
+                        </div>";
+                        }
+                        ?>
                         <div class="navigation-area">
                             <div class="row">
                                 <div
@@ -110,18 +98,18 @@
                                         </a>
                                     </div>
                                     <div class="detials">
-                                        <p>Prev Post</p>
+                                        <p>Предыдущий пост</p>
                                         <a href="#">
-                                            <h4>Space The Final Frontier</h4>
+                                            <h4>Космос Последний рубеж</h4>
                                         </a>
                                     </div>
                                 </div>
                                 <div
                                     class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
                                     <div class="detials">
-                                        <p>Next Post</p>
+                                        <p>Следующее сообщение</p>
                                         <a href="#">
-                                            <h4>Telescopes 101</h4>
+                                            <h4>Телескопы 101</h4>
                                         </a>
                                     </div>
                                     <div class="arrow">
@@ -148,15 +136,15 @@
                                 onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                             <div class="media-body">
                                 <a href="#">
-                                    <h4>Harvard milan</h4>
+                                    <h4>Гарвард милан</h4>
                                 </a>
-                                <p>Second divided from form fish beast made. Every of seas all gathered use saying
-                                    you're, he our dominion twon Second divided from</p>
+                                <p>Второй разделенный из формы рыбный зверь. Каждое из морей, все собравшиеся, говорят
+                                    ты, он наш владычество, второй разделенный с</p>
                             </div>
                         </div>
                     </div>
                     <div class="comments-area">
-                        <h4>05 Comments</h4>
+                        <h4>05 Комментарии</h4>
                         <div class="comment-list">
                             <div class="single-comment justify-content-between d-flex">
                                 <div class="user justify-content-between d-flex">
@@ -167,19 +155,19 @@
                                     </div>
                                     <div class="desc">
                                         <p class="comment">
-                                            Multiply sea night grass fourth day sea lesser rule open subdue female fill
-                                            which them Blessed, give fill lesser bearing multiply sea night grass fourth
-                                            day sea lesser
+                                            Размножение море, ночь, трава, четвертый день, море, меньшее правило, открытое покорение, самка, заполнение
+                                            Которые им Благословенны, наполняют меньший подшипник умножают морскую ночную траву четвертой
+                                            день море меньшее
                                         </p>
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex align-items-center">
                                                 <h5>
-                                                    <a href="#">Emilly Blunt</a>
+                                                    <a href="#">Эмили Блант</a>
                                                 </h5>
-                                                <p class="date">December 4, 2017 at 3:12 pm </p>
+                                                <p class="date">4 декабря 2017 в 15:12</p>
                                             </div>
                                             <div class="reply-btn">
-                                                <a href="#" class="btn-reply text-uppercase">reply</a>
+                                                <a href="#" class="btn-reply text-uppercase">Ответить</a>
                                             </div>
                                         </div>
                                     </div>
@@ -196,19 +184,19 @@
                                     </div>
                                     <div class="desc">
                                         <p class="comment">
-                                            Multiply sea night grass fourth day sea lesser rule open subdue female fill
-                                            which them Blessed, give fill lesser bearing multiply sea night grass fourth
-                                            day sea lesser
+                                           Размножение море, ночь, трава, четвертый день, море, меньшее правило, открытое покорение, самка, заполнение
+                                            Которые им Благословенны, наполняют меньший подшипник умножают морскую ночную траву четвертой
+                                            день море меньшее
                                         </p>
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex align-items-center">
                                                 <h5>
-                                                    <a href="#">Emilly Blunt</a>
+                                                    <a href="#">Эмили Блант</a>
                                                 </h5>
-                                                <p class="date">December 4, 2017 at 3:12 pm </p>
+                                                <p class="date">4 декабря 2017 в 15:12</p>
                                             </div>
                                             <div class="reply-btn">
-                                                <a href="#" class="btn-reply text-uppercase">reply</a>
+                                                <a href="#" class="btn-reply text-uppercase">Ответить</a>
                                             </div>
                                         </div>
                                     </div>
@@ -225,19 +213,19 @@
                                     </div>
                                     <div class="desc">
                                         <p class="comment">
-                                            Multiply sea night grass fourth day sea lesser rule open subdue female fill
-                                            which them Blessed, give fill lesser bearing multiply sea night grass fourth
-                                            day sea lesser
+                                           Размножение море, ночь, трава, четвертый день, море, меньшее правило, открытое покорение, самка, заполнение
+                                            Которые им Благословенны, наполняют меньший подшипник умножают морскую ночную траву четвертой
+                                            день море меньшее
                                         </p>
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex align-items-center">
                                                 <h5>
-                                                    <a href="#">Emilly Blunt</a>
+                                                    <a href="#">Эмили Блант</a>
                                                 </h5>
-                                                <p class="date">December 4, 2017 at 3:12 pm </p>
+                                                <p class="date">4 декабря 2017 в 15:12</p>
                                             </div>
                                             <div class="reply-btn">
-                                                <a href="#" class="btn-reply text-uppercase">reply</a>
+                                                <a href="#" class="btn-reply text-uppercase">Ответить</a>
                                             </div>
                                         </div>
                                     </div>
@@ -246,36 +234,36 @@
                         </div>
                     </div>
                     <div class="comment-form">
-                        <h4>Leave a Reply</h4>
+                        <h4>оставьте ответ</h4>
                         <form class="form-contact comment_form" action="#" id="commentForm">
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-group">
                                         <textarea class="form-control w-100" name="comment" id="comment" cols="30"
-                                            rows="9" placeholder="Write Comment"></textarea>
+                                            rows="9" placeholder="Написать комментарий"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <input class="form-control" name="name" id="name" type="text"
-                                            placeholder="Name">
+                                            placeholder="Имя">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <input class="form-control" name="email" id="email" type="email"
-                                            placeholder="Email">
+                                            placeholder="Электронное письмо">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
                                         <input class="form-control" name="website" id="website" type="text"
-                                            placeholder="Website">
+                                            placeholder="Веб-сайт">
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="button button-contactForm">Send Message</button>
+                                <button type="submit" class="button button-contactForm">Отправить сообщение</button>
                             </div>
                         </form>
                     </div>
@@ -286,34 +274,34 @@
                             <form action="#">
                                 <div class="form-group">
                                     <div class="input-group mb-3">
-                                        <input type="text" class="form-control" placeholder="Search Keyword">
+                                        <input type="text" class="form-control" placeholder="Поиск по ключевому слову">
                                         <div class="input-group-append">
                                             <button class="btn" type="button"><i class="ti-search"></i></button>
                                         </div>
                                     </div>
                                 </div>
                                 <button class="button rounded-0 primary-bg text-white w-100"
-                                    type="submit">Search</button>
+                                    type="submit">Поиск</button>
                             </form>
                         </aside>
                         <aside class="single_sidebar_widget post_category_widget">
-                            <h4 class="widget_title">Category</h4>
+                            <h4 class="widget_title">Категория</h4>
                             <ul class="list cat-list">
                                 <li>
                                     <a href="#" class="d-flex">
-                                        <p>Resaurant food</p>
+                                        <p>Ресторанная еда</p>
                                         <p>(37)</p>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="d-flex">
-                                        <p>Travel news</p>
+                                        <p>Новости путешествий</p>
                                         <p>(10)</p>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="d-flex">
-                                        <p>Modern technology</p>
+                                        <p>Современные технологии</p>
                                         <p>(03)</p>
                                     </a>
                                 </li>
@@ -338,16 +326,16 @@
                             </ul>
                         </aside>
                         <aside class="single_sidebar_widget popular_post_widget">
-                            <h3 class="widget_title">Recent Post</h3>
+                            <h3 class="widget_title">Недавний пост</h3>
                             <div class="media post_item">
                                 <img src="data:image/webp;base64,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"
                                     alt="post" data-pagespeed-url-hash="984224458"
                                     onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                                 <div class="media-body">
                                     <a href="single-blog.html">
-                                        <h3>From life was you fish...</h3>
+                                        <h3>С жизни был ты рыбой ...</h3>
                                     </a>
-                                    <p>January 12, 2019</p>
+                                    <p>12 января 2019 г.,</p>
                                 </div>
                             </div>
                             <div class="media post_item">
@@ -356,9 +344,9 @@
                                     onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                                 <div class="media-body">
                                     <a href="single-blog.html">
-                                        <h3>The Amazing Hubble</h3>
+                                        <h3>Удивительный телескоп Хаббла</h3>
                                     </a>
-                                    <p>02 Hours ago</p>
+                                    <p>02 часов назад</p>
                                 </div>
                             </div>
                             <div class="media post_item">
@@ -367,9 +355,9 @@
                                     onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                                 <div class="media-body">
                                     <a href="single-blog.html">
-                                        <h3>Astronomy Or Astrology</h3>
+                                        <h3>Астрономия или астрология</h3>
                                     </a>
-                                    <p>03 Hours ago</p>
+                                    <p>03 часов назад</p>
                                 </div>
                             </div>
                             <div class="media post_item">
@@ -378,26 +366,26 @@
                                     onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                                 <div class="media-body">
                                     <a href="single-blog.html">
-                                        <h3>Asteroids telescope</h3>
+                                        <h3>Телескоп астероидов</h3>
                                     </a>
-                                    <p>01 Hours ago</p>
+                                    <p>01 часов назад</p>
                                 </div>
                             </div>
                         </aside>
                         <aside class="single_sidebar_widget tag_cloud_widget">
-                            <h4 class="widget_title">Tag Clouds</h4>
+                            <h4 class="widget_title">Облака тегов</h4>
                             <ul class="list">
                                 <li>
-                                    <a href="#">project</a>
+                                    <a href="#">проект</a>
                                 </li>
                                 <li>
-                                    <a href="#">love</a>
+                                    <a href="#">люблю</a>
                                 </li>
                                 <li>
-                                    <a href="#">technology</a>
+                                    <a href="#">технологии</a>
                                 </li>
                                 <li>
-                                    <a href="#">travel</a>
+                                    <a href="#">путешествовать</a>
                                 </li>
                                 <li>
                                     <a href="#">restaurant</a>
@@ -414,7 +402,7 @@
                             </ul>
                         </aside>
                         <aside class="single_sidebar_widget instagram_feeds">
-                            <h4 class="widget_title">Instagram Feeds</h4>
+                            <h4 class="widget_title">Ленты Instagram</h4>
                             <ul class="instagram_row flex-wrap">
                                 <li>
                                     <a href="#">
@@ -467,13 +455,13 @@
                             </ul>
                         </aside>
                         <aside class="single_sidebar_widget newsletter_widget">
-                            <h4 class="widget_title">Newsletter</h4>
+                            <h4 class="widget_title">Новостная рассылка</h4>
                             <form action="#">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Enter email" required>
+                                    <input type="email" class="form-control" placeholder="Введите адрес электронной почты" required>
                                 </div>
                                 <button class="button rounded-0 primary-bg text-white w-100"
-                                    type="submit">Subscribe</button>
+                                    type="submit">Подписывайся</button>
                             </form>
                         </aside>
                     </div>
