@@ -25,7 +25,7 @@
     </section>
     <!--================Fullwidth block Area end =================-->
     <!--================ First block section start =================-->
-        <?php include $_SERVER['DOCUMENT_ROOT']."/eden_pages/NewsBlog/travel_news.php" ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/eden_pages/NewsBlog/travel_news.php" ?>
     <!--================ First block section end =================-->
     <!--================ Editors Picks section start =================-->
     <section class="editors_pick area-padding">
@@ -136,7 +136,8 @@
                 <div class="col-lg-4">
                     <div class="single-blog style-five">
                         <div class="thumb">
-                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/15.jpg" alt="" data-pagespeed-url-hash="704644682"
+                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/15.jpg"
+                                alt="" data-pagespeed-url-hash="704644682"
                                 onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                         </div>
                         <div class="short_details">
@@ -158,7 +159,8 @@
                 <div class="col-lg-4">
                     <div class="single-blog style-five">
                         <div class="thumb">
-                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/16.jpg" alt="" data-pagespeed-url-hash="999144603"
+                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/16.jpg"
+                                alt="" data-pagespeed-url-hash="999144603"
                                 onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                         </div>
                         <div class="short_details">
@@ -180,7 +182,8 @@
                 <div class="col-lg-4">
                     <div class="single-blog style-five">
                         <div class="thumb">
-                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/17.jpg" alt="" data-pagespeed-url-hash="1293644524"
+                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/17.jpg"
+                                alt="" data-pagespeed-url-hash="1293644524"
                                 onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                         </div>
                         <div class="short_details">
@@ -203,147 +206,133 @@
         </div>
     </div>
     <!--================ three-block section end =================-->
-    <!--================ Latest news section start =================-->
+
+
     <div class="latest-news  area-padding-bottom">
         <div class="container">
             <div class="row">
                 <div class="area-heading">
                     <h3>Fashion News</h3>
-                    <p>Обильно подкрадывающийся дух может явиться четвертым нам.</p>
+                    <p>Abundantly creeping saw forth spirit can made appear fourth us.</p>
                 </div>
             </div>
             <div class="row">
-                <?php
-                       include $_SERVER['DOCUMENT_ROOT']."/core/fashion_news.php";
-
-                       $n1 = new News;
-                       $news_first = $n1->main(12,0,1);  // all data news
-                    ?>
+                <div class="col-lg-6">
+                    <div class="single-blog style-five">
+                        <div class="thumb">
+                            <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/18.jpg" alt="" data-pagespeed-url-hash="1588144445"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </div>
+                        <div class="short_details">
+                            <div class="meta-top d-flex">
+                                <a href="#">shoes</a>/
+                                <a href="#">March 15, 2019</a>
+                            </div>
+                            <a class="d-block" href="single-blog.html">
+                                <h4>Brought dreepeth youll blessed
+                                    from whose signs over</h4>
+                            </a>
+                            <div class="meta-bottom d-flex">
+                                <a href="#"><i class="ti-comment"></i>05 comment</a>
+                                <a href="#"><i class="ti-heart"></i> 0 like</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg-6">
                     <div class="row">
-
-
-
-                        <div class="col-md-6 col-lg-6 col-xl-5">
-                            <div class="single-blog">
+                        <div class="col-lg-6">
+                            <div class="single-blog style-five small">
                                 <div class="thumb">
-                                    <img class="img-fluid" src="/img/news/<?=$news_first['img']?>" alt=""
-                                        data-pagespeed-url-hash="4056137993">
+                                    <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/19.jpg" alt=""
+                                        data-pagespeed-url-hash="1882644366"
+                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                                 </div>
                                 <div class="short_details">
                                     <div class="meta-top d-flex">
-                                        <a href="#"><?=$n1->get_category()?></a>
+                                        <a href="#">shoes</a>/
+                                        <a href="#">March 15, 2019</a>
                                     </div>
                                     <a class="d-block" href="single-blog.html">
-                                        <h4><?=$news_first['title']?></h4>
+                                        <h4>Shall for rule whoses
+                                            may heaven to</h4>
                                     </a>
                                     <div class="meta-bottom d-flex">
-                                        <a href="#"><?=$news_first['date']?> </a>
-                                        <a class="dark_font" href="#"> By <?=$news_first['author']?></a>
+                                        <a href="#">March 15, 2019</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
-                        <?php
-   $n2 = new News;
-   $news_second = $n2->main(4,0,1);
-   $n3 = new News;
-   $news_third = $n3->main(5,0,1);  // all data news
-?>
-                        <div class="col-lg-12 col-xl-3">
-                            <div class="row">
-                                <div class="col-12 col-md-6 col-lg-6 col-xl-12">
-                                    <div class="single-blog style-three m_b_30">
-                                        <div class="thumb">
-                                            <img class="img-fluid" src="/img/news/<?=$news_second['img']?>" alt=""
-                                                data-pagespeed-url-hash="350170539">
-                                        </div>
-                                        <div class="short_details">
-                                            <div class="meta-top d-flex justify-content-center">
-                                                <a href="#"><?=$n2->get_category()?></a>
-                                            </div>
-                                            <a class="d-block" href="single-blog.html">
-                                                <h4><?=$news_second['title']?></h4>
-                                            </a>
-                                        </div>
-                                    </div>
+                        <div class="col-lg-6">
+                            <div class="single-blog style-five small">
+                                <div class="thumb">
+                                    <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/20.jpg" alt=""
+                                        data-pagespeed-url-hash="3451896360"
+                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                                 </div>
-                                <div class="col-12 col-md-6 col-lg-6 col-xl-12">
-                                    <div class="single-blog style-three m_b_30">
-                                        <div class="thumb">
-                                            <img class="img-fluid" src="/img/news/<?=$news_third['img']?>" alt=""
-                                                data-pagespeed-url-hash="350170539">
-                                        </div>
-                                        <div class="short_details">
-                                            <div class="meta-top d-flex justify-content-center">
-                                                <a href="#"><?=$n3->get_category()?></a>
-                                            </div>
-                                            <a class="d-block" href="single-blog.html">
-                                                <h4><?=$news_third['title']?></h4>
-                                            </a>
-                                        </div>
+                                <div class="short_details">
+                                    <div class="meta-top d-flex">
+                                        <a href="#">shoes</a>/
+                                        <a href="#">March 15, 2019</a>
+                                    </div>
+                                    <a class="d-block" href="single-blog.html">
+                                        <h4>Shall for rule whoses
+                                            may heaven to</h4>
+                                    </a>
+                                    <div class="meta-bottom d-flex">
+                                        <a href="#">March 15, 2019</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
-                    </div>
-
-
-                    <?php
-   $n4 = new News;
-   $news_sport_1 = $n3->main(2,0,1);  // all data news
-
-   $n5 = new News;
-   $news_sport_2 = $n4->main(11,0,1);  // all data news
-?>
-                    <div class="col-lg-12 col-xl-3">
-                        <div class="row">
-                            <div class="col-12 col-md-6 col-lg-6 col-xl-12">
-                                <div class="single-blog style-three m_b_30">
-                                    <div class="thumb">
-                                        <img class="img-fluid" src="/img/news/<?=$news_sport_1['img']?>" alt=""
-                                            data-pagespeed-url-hash="350170539">
+                        <div class="col-lg-6">
+                            <div class="single-blog style-five small">
+                                <div class="thumb">
+                                    <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/21.jpg" alt=""
+                                        data-pagespeed-url-hash="3746396281"
+                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                </div>
+                                <div class="short_details">
+                                    <div class="meta-top d-flex">
+                                        <a href="#">shoes</a>/
+                                        <a href="#">March 15, 2019</a>
                                     </div>
-                                    <div class="short_details">
-                                        <div class="meta-top d-flex justify-content-center">
-                                            <a href="#"><?=$n4->get_category()?></a>
-                                        </div>
-                                        <a class="d-block" href="single-blog.html">
-                                            <h4><?=$news_sport_1['title']?></h4>
-                                        </a>
+                                    <a class="d-block" href="single-blog.html">
+                                        <h4>Shall for rule whoses
+                                            may heaven to</h4>
+                                    </a>
+                                    <div class="meta-bottom d-flex">
+                                        <a href="#">March 15, 2019</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-6 col-xl-12">
-                                <div class="single-blog style-three m_b_30">
-                                    <div class="thumb">
-                                        <img class="img-fluid" src="/img/news/<?=$news_sport_2['img']?>" alt=""
-                                            data-pagespeed-url-hash="350170539">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="single-blog style-five small">
+                                <div class="thumb">
+                                    <img class="img-fluid" src="https://preview.colorlib.com/theme/eden/img/magazine/22.jpg" alt=""
+                                        data-pagespeed-url-hash="4040896202"
+                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                </div>
+                                <div class="short_details">
+                                    <div class="meta-top d-flex">
+                                        <a href="#">shoes</a>/
+                                        <a href="#">March 15, 2019</a>
                                     </div>
-                                    <div class="short_details">
-                                        <div class="meta-top d-flex justify-content-center">
-                                            <a href="#"><?=$n5->get_category()?></a>
-                                        </div>
-                                        <a class="d-block" href="single-blog.html">
-                                            <h4><?=$news_sport_2['title']?></h4>
-                                        </a>
+                                    <a class="d-block" href="single-blog.html">
+                                        <h4>Shall for rule whoses
+                                            may heaven to</h4>
+                                    </a>
+                                    <div class="meta-bottom d-flex">
+                                        <a href="#">March 15, 2019</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
-
             </div>
         </div>
-    </div>
-    </div>
     </div>
     <!--================ Latest news section end =================-->
     <!-- ================ Instargram Area Starts ================= -->
