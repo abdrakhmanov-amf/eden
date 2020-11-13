@@ -336,40 +336,7 @@
     </div>
     <!--================ Latest news section end =================-->
     <!-- ================ Instargram Area Starts ================= -->
-    <section class="instagram">
-        <div class="row no-gutters">
-            <div class="col-2">
-                <a href="tel:87477434999"><img
-                        src="https://preview.colorlib.com/theme/eden/img/instagram/x1.jpg.pagespeed.ic.3_eOt8F4XH.webp"
-                        alt="" data-pagespeed-url-hash="270620287"></a>
-            </div>
-            <div class="col-2">
-                <a href=""><img
-                        src="https://preview.colorlib.com/theme/eden/img/instagram/x2.jpg.pagespeed.ic.gPg6abEm-g.webp"
-                        alt="" data-pagespeed-url-hash="565120208"></a>
-            </div>
-            <div class="col-2">
-                <a href=""><img
-                        src="https://preview.colorlib.com/theme/eden/img/instagram/x3.jpg.pagespeed.ic.5WsMxMN_0v.webp"
-                        alt="" data-pagespeed-url-hash="859620129"></a>
-            </div>
-            <div class="col-2">
-                <a href=""><img
-                        src="https://preview.colorlib.com/theme/eden/img/instagram/x4.jpg.pagespeed.ic.GkjdfAYrlv.webp"
-                        alt="" data-pagespeed-url-hash="1154120050"></a>
-            </div>
-            <div class="col-2">
-                <a href=""><img
-                        src="https://preview.colorlib.com/theme/eden/img/instagram/x5.jpg.pagespeed.ic.fwnMPKrUbk.webp"
-                        alt="" data-pagespeed-url-hash="1448619971"></a>
-            </div>
-            <div class="col-2">
-                <a href=""><img
-                        src="https://preview.colorlib.com/theme/eden/img/instagram/x6.jpg.pagespeed.ic.vu8416XHC0.webp"
-                        alt="" data-pagespeed-url-hash="1743119892"></a>
-            </div>
-        </div>
-    </section>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/eden_pages/Widget/instagram.html"; ?>
     <!-- ================ Instargram Area End ================= -->
     <!-- ================ start footer Area ================= -->
     <?php include $_SERVER['DOCUMENT_ROOT']."/includes/footer.php"; ?>

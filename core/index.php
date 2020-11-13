@@ -33,7 +33,7 @@ header('Content-Type: text/html; charset=utf-8'); // кодировка
         '/contacts' =>'query/contact.php',
         '/blogs' =>'query/blog.php',
         '/search_query' =>'query/search.php',
-
+        '/email'=>'query/Email/send.php',
         '/404' =>'error/404.html',
 
     ];
