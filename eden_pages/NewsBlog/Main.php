@@ -17,7 +17,7 @@ include "../core/news.php";
                             <div class="meta-top d-flex">
                                 <a href="#"><?=$n1->get_category()?></a>
                             </div>
-                            <a class="d-block" href="eden_pages/single_blog.php?id=<?=$news_first['id']?>">
+                            <a class="d-block" href="/single?id=<?=$news_first['id']?>">
                                 <h4><?=$news_first['title']?></h4>
                             </a>
                             <div class="meta-bottom d-flex">
