@@ -6,6 +6,7 @@ if(isset($_POST['text'])){
 
     if(DB::NumRow($query)){
         while($news = DB::Assoc($query)) {
+            $category = DB::Assoc(DB::Query("SELECT `name` FROM `category` WHERE `id`=$news[category_id]"));
             echo "
             <div class='col-md-6 col-lg-4'>
                     <div class='single-category'>
@@ -17,7 +18,7 @@ if(isset($_POST['text'])){
                         </div>
                         <div class='short_details'>
                             <div class='meta-top d-flex'>
-                                <a href='#'>$news[category]</a>/
+                                <a href='#'>$category[name]</a>/
                                 <a href='#'>$news[date] .,</a>
                             </div>
                             <a class='d-block' href='single-blog.html'>
