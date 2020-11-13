@@ -11,7 +11,7 @@ header('Content-Type: text/html; charset=utf-8'); // кодировка
         '/'=> 'eden_pages/index.php',
         '/login'=> 'eden_pages/signin.php',
         '/registration'=> 'eden_pages/signup.php',
-        '/archive'=>'eden_pages/archive.php',
+        '/search'=>'eden_pages/search.php',
         '/blog'=>'eden_pages/blog.php',
         '/categories'=>'eden_pages/categories.php',
         '/contact'=>'eden_pages/contact.php',
@@ -32,6 +32,7 @@ header('Content-Type: text/html; charset=utf-8'); // кодировка
         '/sign' =>'query/sign.php',
         '/contacts' =>'query/contact.php',
         '/blogs' =>'query/blog.php',
+        '/search_query' =>'query/search.php',
 
         '/404' =>'error/404.html',
 
