@@ -70,7 +70,7 @@ include "../core/news.php";
                         <div class="col-12 col-md-6 col-lg-6 col-xl-12">
                             <div class="single-blog style-three m_b_30">
                                 <div class="thumb">
-                                    <img class="img-fluid" src="/img/news/<?=$news_sport_2['img']?>" alt=""
+                                    <img class="img-fluid" src="/img/news/<?=$news_sport_1['img']?>" alt=""
                                         data-pagespeed-url-hash="350170539"
                                         >
                                 </div>
