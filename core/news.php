@@ -11,11 +11,13 @@
             $this->category = $category;
             return $array_news;
         }
-        public function Whiles($category,$start,$end)
+        public function Whiles($category,$html)
         {
-           $news = DB::Query("SELECT * FROM `blog` WHERE `category_id`='$category' LIMIT $start,$end");
-            $this->category = $category;
-            return $news;
+            while ($c = $category) {
+                return "
+                $html
+                ";
+            }
         }
 
         public function get_category(){

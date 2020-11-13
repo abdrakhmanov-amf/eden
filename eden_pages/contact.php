@@ -1,7 +1,13 @@
 <!doctype html>
 <html lang="en">
 
-<?php include "../includes/head.php"; ?>
+<?php include "../includes/head.php"; 
+
+
+
+
+
+?>
 
 <body>
     <!--================ Start header Top Area =================-->
@@ -39,7 +45,7 @@
                     <h2 class="contact-title">Связаться</h2>
                 </div>
                 <div class="col-lg-8">
-                    <form class="form-contact" method="post" action="/contacts">
+                    <form class="form-contact" method="post" action="/contacts" id="contactForm2">
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
@@ -145,6 +151,22 @@
 <!-- ================ End footer Area ================= -->
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
 <?php include "../includes/js.php"; ?>
+
+<script>
+        <?php
+            if(isset($_GET['send'])){
+                if($_GET['send']=='true'){
+                    echo "jQuery('#contactForm2').fadeTo('slow', 1, function (){jQuery('#success').fadeIn(),jQuery('.modal').modal('hide');jQuery('#success').modal('show');})";
+                }
+                else if($_GET['send']=='false'){
+                    echo "jQuery('#contactForm2').fadeTo('slow', 1, function (){jQuery('#error').fadeIn(),jQuery('.modal').modal('hide');jQuery('#error').modal('show');})";
+                }
+            }
+        ?>
+</script>
+
 </body>
 </html>
