@@ -21,7 +21,7 @@
                                 <div class="meta-top d-flex">
                                     <a href="#"><?=$travel_n1->get_category()?></a>
                                 </div>
-                                <a class="d-block" href="/eden_pages/single_blog.php">
+                                <a class="d-block" href="/single?id=<?=$t_news1['id']?>">
                                     <h4><?=$t_news1['title']?></h4>
                                 </a>
                                 <div class="meta-bottom d-flex">
@@ -51,7 +51,7 @@
                             <div class="meta-top d-flex">
                                 <a href="#"><?=$travel_n2->get_category()?></a>
                             </div>
-                            <a class="d-block" href="/eden_pages/single_blog.php">
+                            <a class="d-block" href="/single?id=<?=$t_news2['id']?>">
                                 <h4><?=$t_news2['title']?></h4>
                             </a>
                         </div>
@@ -74,7 +74,7 @@
                             <div class="meta-top d-flex">
                                 <a href="#"><?=$travel_n3->get_category()?></a>
                             </div>
-                            <a class="d-block" href="/eden_pages/single_blog.php">
+                            <a class="d-block" href="/single?id=<?=$t_news3['id']?>">
                                 <h4><?=$t_news3['title']?></h4>
                             </a>
                         </div>
