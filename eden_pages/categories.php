@@ -32,27 +32,16 @@
     <section class="category-page area-padding">
         <div class="container">
             <div class="row">
-               <?php include "../query/blog.php"; ?>
+                <?php  include "../query/categories.php"; ?>
+                
 
-                <div class="col-12 text-center">
-                    <a href="" class="main_btn">Загрузи больше<span class="ti-angle-double-right"></span></a>
-                </div>
+
             </div>
         </div>
     </section>
     <!--================Category  Area End =================-->
     <!-- ================ Instargram Area Starts ================= -->
-    <section class="instagram">
-        <div class="row no-gutters">
-            <div class="col-2">
-                <a href=""><img
-                        src="https://preview.colorlib.com/theme/eden/img/instagram/x1.jpg.pagespeed.ic.3_eOt8F4XH.webp"
-                        alt="" data-pagespeed-url-hash="270620287"
-                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
-            </div>
 
-        </div>
-    </section>
     <!-- ================ Instargram Area End ================= -->
     <!-- ================ start footer Area ================= -->
     <?php include "../includes/footer.php"; ?>
