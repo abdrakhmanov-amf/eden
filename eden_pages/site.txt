@@ -3,3 +3,36 @@ https://preview.colorlib.com/theme/eden/
 https://www.behance.net/
 
 https://www.pexels.com/ru-ru/photo/5245215/
+
+
+sms отправка
+            https://mobizon.kz/prices
+система оплаты
+            https://paybox.money/kz_ru
+домен и хостинг 
+            https://www.ps.kz/
+foreign mysql 
+
+
+
+blog       category_id   tag_id
+
+category   id
+
+tag        
+
+___________________________________________________________________________
+table  view_news
+
+    id  news_id  Ip 
+
+    1   4        94.12.34
+    2   4        97.23.34
+    
+
+    4 news  count()  //2
+
+
+
+shop 
+    https://preview.colorlib.com/theme/shoppers/
