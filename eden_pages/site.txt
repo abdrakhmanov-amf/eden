@@ -1,6 +1,10 @@
 https://preview.colorlib.com/theme/eden/
 
 https://www.behance.net/
+<<<<<<< HEAD
+SMD - терминал
+https://www.pexels.com/ru-ru/photo/5245215/
+=======
 
 https://www.pexels.com/ru-ru/photo/5245215/
 
@@ -36,3 +40,4 @@ table  view_news
 
 shop 
     https://preview.colorlib.com/theme/shoppers/
+>>>>>>> 41d471f142d29223be4c849579c78eba29c6759a

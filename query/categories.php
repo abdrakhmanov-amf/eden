@@ -7,7 +7,7 @@
         $blogs   = DB::Query( "SELECT * FROM  `blog`  WHERE `category_id`='$category[id]'");
 
         $blog = "";
-        while ($p =DB::Assoc($blogs)) {
+        while ($b =DB::Assoc($blogs)) {
             
           
                 $blog .= "
@@ -16,7 +16,7 @@
                     <div class='single-category'>
                         <div class='thumb'>
                             <img class='img-fluid'
-                                src='https://preview.colorlib.com/theme/edenimg/category/1.jpg'
+                                src='/img/news/$b[img]'
                                 alt=' data-pagespeed-url-hash='2894990395'
                                 onload='pagespeed.CriticalImages.checkImageForCriticality(this);'>
                         </div>
@@ -26,7 +26,7 @@
                                 <a href='#'>$b[date]</a>
                             </div>
                             <a class='d-block' href='single-blog.html'>
-                                <h4>$b[desk]</h4>
+                                <h4>$b[title]</h4>
                             </a>
                             <div class='meta-bottom d-flex'>
                                 <a href='#'><i class='ti-comment'></i>05 комментарий</a>
@@ -43,7 +43,7 @@
         if($blog!='') {
 
         
-        echo "$blog[title]";
+        echo "$b[title]";
         echo "
         <div class='container ptb'>
             <div class='row'>
@@ -54,7 +54,7 @@
                     
                 </div>
             </div>
-            </div>
+            </div><br>
             
         
             $blog
