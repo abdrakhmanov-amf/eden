@@ -1,7 +1,7 @@
 <?php
 require "DB.php";
 header('Content-Type: text/html; charset=utf-8'); // кодировка 
-
+echo "hello user, this updated file ";
    $rout = $_SERVER["REQUEST_URI"]; // ссылка  
    $ex = explode('?',$rout);   //  https:://local.com  ?   id 
    $linking =  $_SERVER["REDIRECT_URL"];   //  https:://local.com/admin
