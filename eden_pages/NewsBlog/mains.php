@@ -7,7 +7,7 @@
                 </div>
             </div>
             <?php 
-include "../core/news.php";
+
 
    $n1 = new News;
    $news_first = $n1->main(12,0,1);  // all data news
@@ -98,9 +98,6 @@ include "../core/news.php";
    $n4 = new News;
    $news_sport_4 = $n4->main(4,0,1);  // all data news
 
-  
-   
-   
 ?>
                          <div class="col-lg-6">
                             <div class="single-blog style-five small">
