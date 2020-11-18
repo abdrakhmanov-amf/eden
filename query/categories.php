@@ -16,7 +16,7 @@
                     <div class='single-category'>
                         <div class='thumb'>
                             <img class='img-fluid'
-                                src='img/img$b[img]'
+                                src='/img/news/$b[img]'
                                 alt=' data-pagespeed-url-hash='2894990395'
                                 onload='pagespeed.CriticalImages.checkImageForCriticality(this);'>
                         </div>
