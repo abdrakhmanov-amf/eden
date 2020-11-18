@@ -13,7 +13,7 @@ $mail->CharSet = "utf-8";// set charset to utf8
 $mail->SMTPAuth = false;// Enable SMTP authentication
 $mail->SMTPSecure = 'tls';// Enable TLS encryption, `ssl` also accepted
 
-$mail->Host = 'smtp.gmail.com';// Specify main and backup SMTP servers
+$mail->Host = '195.210.46.45';// Specify main and backup SMTP servers
 $mail->Port = 465;// TCP port to connect to
 $mail->SMTPOptions = array(
     'ssl' => array(
@@ -24,13 +24,13 @@ $mail->SMTPOptions = array(
 );
 $mail->isHTML(true);// Set email format to HTML
 
-$mail->Username = 'edennewssite@gmail.com';// SMTP username
-$mail->Password = 'testeden37';// SMTP password
+$mail->Username = 'Eden@anticorruption.kz';// SMTP username
+$mail->Password = '12345erzh!!';// SMTP password
 
 $mail->setFrom('erjigit1407@gmail.com', 'hjbhqedqd');//Your application NAME and EMAIL
 $mail->Subject = 'Test';//Message subject
 $mail->MsgHTML('HTML code');// Message body
-$mail->addAddress('edennewssite@gmail.com', 'User Name');// Target email
+$mail->addAddress('Eden@anticorruption.kz', 'User Name');// Target email
 
 
 $mail->send();
