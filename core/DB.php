@@ -7,7 +7,7 @@
  //   connect to base
         private static function connect()
         {
-           return mysqli_connect("srv-db-plesk05.ps.kz:3306","erzhkz_sultan","asdqwe123&&","erzhkz_eden.kz");
+           return mysqli_connect("localhost","root","root","Eden");
         }
 //    
         public static function Query($q)
