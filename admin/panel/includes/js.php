@@ -1,0 +1,1 @@
+<script type="text/javascript" src="/admin/panel/assets/scripts/main.js"></script>

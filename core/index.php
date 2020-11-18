@@ -26,7 +26,7 @@ header('Content-Type: text/html; charset=utf-8'); // кодировка
     //user page 
 
     //admin page
-
+        '/admin'=>'/admin/Sultan/blog/blog.php',
     //query
         '/regis_to_new_user' =>'query/regis.php',
         '/sign' =>'query/sign.php',
