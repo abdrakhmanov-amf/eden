@@ -3,12 +3,8 @@ $to .= "erzhigit1407@gmail.com>";
 
 $subject = "Заголовок письма"; 
 
-$message = `
+$message = '
 
-<!DOCTYPE html>
-<html lang="en" >
-
-<head>
 
   <meta charset="UTF-8">
   
@@ -31,7 +27,7 @@ $message = `
 <style>
 /* This CSS code you should add to <head> of your page */
 /* This code is for responsive design */
-/* It didn't work in Gmail app on Android, but work fine on iOS */
+/* It didnt work in Gmail app on Android, but work fine on iOS */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic&subset=latin,cyrillic);
 
@@ -401,18 +397,9 @@ a {
     </table>
 </center>
   
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   
-  
-  
-
-</body>
-
-</html>
- 
-
-
-`;
+';
 
 $headers  = "Content-type: text/html; charset=utf-8 \r\n"; 
 $headers .= "From: От кого письмо <Eden@anticorruption.kz>\r\n"; 
